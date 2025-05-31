@@ -1,0 +1,350 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g1652595-Hai_Duong_Hai_Duong_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 17,
+  "items_count": 17,
+  "results": [
+    {
+      "id": 19385259,
+      "name": "Nha Hang Vit Quay Lu Chinh Ha",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d19385259-Reviews-Nha_Hang_Vit_Quay_Lu_Chinh_Ha-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 5,
+      "rating": 4.8,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/fb/bb/35/nu-ng-lu.jpg",
+      "latitude": 20.932583,
+      "longitude": 106.32051,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 1743469,
+      "name": "Ristorante Italia",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d1743469-Reviews-Ristorante_Italia-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 50,
+      "rating": 4.6,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/c5/dd/c8/you-want-to-tell-somebody.jpg",
+      "latitude": 20.936588,
+      "longitude": 106.30179,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian",
+        "Pizza",
+        "Mediterranean",
+        "European"
+      ]
+    },
+    {
+      "id": 15597897,
+      "name": "GoGi House Hai Duong",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d15597897-Reviews-GoGi_House_Hai_Duong-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 3,
+      "rating": 5,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": "http://gogi.com.vn/menus/thuc-don-gogi/",
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/8d/0c/c1/d-an-ngon-ch-t-lu-ng.jpg",
+      "latitude": 20.94092,
+      "longitude": 106.32773,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Barbecue",
+        "Asian",
+        "Korean"
+      ]
+    },
+    {
+      "id": 26697557,
+      "name": "Indian Rasoi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d26697557-Reviews-Indian_Rasoi-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 4,
+      "rating": 4.8,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/6f/a2/5f/caption.jpg",
+      "latitude": 20.923363,
+      "longitude": 106.33784,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Indian"
+      ]
+    },
+    {
+      "id": 14057807,
+      "name": "V52 Tram Dich Vu Hai Duong",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d14057807-Reviews-V52_Tram_Dich_Vu_Hai_Duong-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 9,
+      "rating": 2.7,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/e6/5c/e5/v52-tr-m-d-ch-v-h-i-duong.jpg",
+      "latitude": 20.857578,
+      "longitude": 106.33262,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Fast Food",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 13993696,
+      "name": "Am Thuc Chay Thien Truc",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d13993696-Reviews-Am_Thuc_Chay_Thien_Truc-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 5,
+      "rating": 4.4,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/9d/b8/1d/photo4jpg.jpg",
+      "latitude": 20.935587,
+      "longitude": 106.31472,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 24040291,
+      "name": "Napolis Pizza Hải Dương",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d24040291-Reviews-Napolis_Pizza_H_i_Duong-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/7d/55/35/napolis-pizza-h-i-duong.jpg",
+      "latitude": 20.941187,
+      "longitude": 106.317055,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian",
+        "American",
+        "Bar",
+        "Barbecue",
+        "Pub",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 17219911,
+      "name": "Lina Hana",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d17219911-Reviews-Lina_Hana-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/29/a3/58/caption.jpg",
+      "latitude": 20.936277,
+      "longitude": 106.2929,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Sushi"
+      ]
+    },
+    {
+      "id": 13288192,
+      "name": "Nhà Hàng Hương Biển",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d13288192-Reviews-Nha_Hang_Huong_Bi_n-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 20.94949,
+      "longitude": 106.33456,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood"
+      ]
+    },
+    {
+      "id": 17631981,
+      "name": "Nha Hang Hai San Hong Ha",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d17631981-Reviews-Nha_Hang_Hai_San_Hong_Ha-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 1,
+      "rating": 3,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/cc/82/5b/photo1jpg.jpg",
+      "latitude": 20.93352,
+      "longitude": 106.3205,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 24036717,
+      "name": "Napoli's Pizza Hai Duong",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d24036717-Reviews-Napoli_s_Pizza_Hai_Duong-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/54/c1/fa/mon-ngon-delicious-food.jpg",
+      "latitude": 20.941427,
+      "longitude": 106.31706,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 15829134,
+      "name": "1988 Pizza",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d15829134-Reviews-1988_Pizza-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 2,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/99/d2/97/caption.jpg",
+      "latitude": 20.94268,
+      "longitude": 106.33072,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian"
+      ]
+    },
+    {
+      "id": 19354279,
+      "name": "Sky 26 Bar Nam Cuong Hotel",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d19354279-Reviews-Sky_26_Bar_Nam_Cuong_Hotel-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/e5/d1/69/getlstd-property-photo.jpg",
+      "latitude": 20.76126,
+      "longitude": 106.49162,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Bar",
+        "Pub",
+        "Diner"
+      ]
+    },
+    {
+      "id": 15597899,
+      "name": "Kichi Kichi Hai Duong",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d15597899-Reviews-Kichi_Kichi_Hai_Duong-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/a1/47/55/getlstd-property-photo.jpg",
+      "latitude": 20.937355,
+      "longitude": 106.30905,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian"
+      ]
+    },
+    {
+      "id": 26579204,
+      "name": "66 Đỗ Ngọc Du - Tân Bình - Hải Dương",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d26579204-Reviews-66_D_Ng_c_Du_Tan_Binh_H_i_Duong-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 20.928349,
+      "longitude": 106.31454,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Fast Food",
+        "Fusion",
+        "Diner",
+        "Street Food"
+      ]
+    },
+    {
+      "id": 19483332,
+      "name": "Am Thuc Cung Dinh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d19483332-Reviews-Am_Thuc_Cung_Dinh-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 20.90156,
+      "longitude": 106.51069,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood",
+        "Asian",
+        "Korean",
+        "Deli",
+        "Vietnamese",
+        "Healthy"
+      ]
+    },
+    {
+      "id": 28121034,
+      "name": "Green Field Bowl",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1652595-d28121034-Reviews-Green_Field_Bowl-Hai_Duong_Hai_Duong_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 20.915688,
+      "longitude": 106.33306,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    }
+  ]
+}

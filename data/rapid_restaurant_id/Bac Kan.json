@@ -1,0 +1,149 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g3691210-Bac_Kan_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 7,
+  "items_count": 7,
+  "results": [
+    {
+      "id": 15142127,
+      "name": "Le Jardin Bac Kan",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12866471-d15142127-Reviews-Le_Jardin_Bac_Kan-Bac_Kan_Bac_Kan_Province.html",
+      "reviews": 2,
+      "rating": 4.5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/c6/7b/89/1.jpg",
+      "latitude": 22.14806,
+      "longitude": 105.83317,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "French",
+        "Pizza",
+        "Cafe",
+        "Vietnamese",
+        "Wine Bar"
+      ]
+    },
+    {
+      "id": 8845299,
+      "name": "Cay Me Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12866471-d8845299-Reviews-Cay_Me_Restaurant-Bac_Kan_Bac_Kan_Province.html",
+      "reviews": 7,
+      "rating": 4.9,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/e6/f6/c6/cay-me-restaurant.jpg",
+      "latitude": 22.12161,
+      "longitude": 105.84056,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 12502612,
+      "name": "Nguyen Van Khoa Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12866471-d12502612-Reviews-Nguyen_Van_Khoa_Restaurant-Bac_Kan_Bac_Kan_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/21/ea/7f/com-m-t-699000d-vui-long.jpg",
+      "latitude": 22.199682,
+      "longitude": 105.84885,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Deli"
+      ]
+    },
+    {
+      "id": 24892492,
+      "name": "Ba Be Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12866471-d24892492-Reviews-Ba_Be_Restaurant-Bac_Kan_Bac_Kan_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 22.42045,
+      "longitude": 105.6421,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 23063605,
+      "name": "Nhà Hàng Phúc Khánh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g4196266-d23063605-Reviews-Nha_Hang_Phuc_Khanh-Ba_Be_National_Park_Bac_Kan_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/8e/06/85/view-h-ba-b.jpg",
+      "latitude": 22.394741,
+      "longitude": 105.626976,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Asian",
+        "Deli",
+        "Diner"
+      ]
+    },
+    {
+      "id": 10825161,
+      "name": "TLT Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12866471-d10825161-Reviews-TLT_Restaurant-Bac_Kan_Bac_Kan_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 22.12404,
+      "longitude": 105.83852,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Deli"
+      ]
+    },
+    {
+      "id": 16657169,
+      "name": "Nha Hang Tinh Tuong",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g16660975-d16657169-Reviews-Nha_Hang_Tinh_Tuong-Phu_Thong_Bac_Kan_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 22.40308,
+      "longitude": 105.61961,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    }
+  ]
+}

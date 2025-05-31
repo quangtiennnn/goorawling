@@ -1,0 +1,194 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g12875231-Hung_Yen_Hung_Yen_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 9,
+  "items_count": 9,
+  "results": [
+    {
+      "id": 28471129,
+      "name": "Bếp Nhà Nem - Nầm Bò Nướng Ecopark",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d28471129-Reviews-B_p_Nha_Nem_N_m_Bo_Nu_ng_Ecopark-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 12,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/f6/9e/0c/n-m-bo-nu-ng.jpg",
+      "latitude": 21.141869,
+      "longitude": 106.018425,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 12049511,
+      "name": "Cố Đô Hội Quán",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d12049511-Reviews-C_Do_H_i_Quan-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 2,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/33/80/8f/outside.jpg",
+      "latitude": 20.928219,
+      "longitude": 106.05792,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 23932075,
+      "name": "BHAI BHAI Kitchen - Halal restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d23932075-Reviews-BHAI_BHAI_Kitchen_Halal_restaurant-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/72/2e/17/bhai-bhai-kitchen-pakistan.jpg",
+      "latitude": 20.947838,
+      "longitude": 105.93622,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Indian",
+        "Barbecue",
+        "Pakistani"
+      ]
+    },
+    {
+      "id": 27702772,
+      "name": "Texgrill Mega Grand World Ha Noi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d27702772-Reviews-Texgrill_Mega_Grand_World_Ha_Noi-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/0c/71/ee/you-will-be-extremely.jpg",
+      "latitude": 21.033333,
+      "longitude": 105.84962,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "American",
+        "Pizza",
+        "Barbecue",
+        "Deli",
+        "Grill"
+      ]
+    },
+    {
+      "id": 29129879,
+      "name": "Kobe Steak Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d29129879-Reviews-Kobe_Steak_Restaurant-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 20.954939,
+      "longitude": 105.93139,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "European"
+      ]
+    },
+    {
+      "id": 27754634,
+      "name": "Au Steakhouse",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d27754634-Reviews-Au_Steakhouse-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 20.43382,
+      "longitude": 106.172966,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Steakhouse",
+        "Pizza",
+        "European"
+      ]
+    },
+    {
+      "id": 26363790,
+      "name": "MinT Bistro Ecopark",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d26363790-Reviews-MinT_Bistro_Ecopark-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/cc/bf/3a/mint-bistro-menu.jpg",
+      "latitude": 20.947886,
+      "longitude": 105.93657,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Dining bars"
+      ]
+    },
+    {
+      "id": 23274638,
+      "name": "Effoc",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d23274638-Reviews-Effoc-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 20.972042,
+      "longitude": 105.92876,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "American",
+        "Cafe",
+        "Deli",
+        "Vietnamese",
+        "Healthy"
+      ]
+    },
+    {
+      "id": 20996105,
+      "name": "Chococapu",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12875231-d20996105-Reviews-Chococapu-Hung_Yen_Hung_Yen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "South American",
+        "Colombian"
+      ]
+    }
+  ]
+}

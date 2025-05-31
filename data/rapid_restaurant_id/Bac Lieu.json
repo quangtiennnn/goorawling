@@ -1,0 +1,204 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g6936569-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 10,
+  "items_count": 10,
+  "results": [
+    {
+      "id": 8591805,
+      "name": "Thuyen Trang Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d8591805-Reviews-Thuyen_Trang_Restaurant-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 7,
+      "rating": 4.4,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/58/1b/c3/ch-p-trong-thuy-n-trang.jpg",
+      "latitude": 9.294065,
+      "longitude": 105.7102,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Chinese",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 26618269,
+      "name": "Lạc dining",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d26618269-Reviews-L_c_dining-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 7,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/c7/a2/f8/vegetarian-fried-rice.jpg",
+      "latitude": 9.294834,
+      "longitude": 105.71718,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "European",
+        "Pub",
+        "Vietnamese",
+        "Wine Bar",
+        "Soups"
+      ]
+    },
+    {
+      "id": 26661119,
+      "name": "Quán Ăn Chay Nhân Duyên Quán",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d26661119-Reviews-Quan_An_Chay_Nhan_Duyen_Quan-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.295155,
+      "longitude": 105.717064,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Chinese",
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 14057826,
+      "name": "Bun Nuoc Leo Ca Dong Ut Men",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d14057826-Reviews-Bun_Nuoc_Leo_Ca_Dong_Ut_Men-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/16/fd/06/bun-nu-c-leo-ca-d-ng.jpg",
+      "latitude": 9.33998,
+      "longitude": 105.715645,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood"
+      ]
+    },
+    {
+      "id": 7813461,
+      "name": "Cong Tu Bac Lieu",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d7813461-Reviews-Cong_Tu_Bac_Lieu-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 10,
+      "rating": 3.4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6d/0e/e4/d-ng-di-vao-cu-i-tu-n.jpg",
+      "latitude": 9.284128,
+      "longitude": 105.72372,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 26661081,
+      "name": "Bánh Xèo A Mật",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d26661081-Reviews-Banh_Xeo_A_M_t-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.25122,
+      "longitude": 105.53421,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 26661107,
+      "name": "Bún Nước Lèo Năm Hớn",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d26661107-Reviews-Bun_Nu_c_Leo_Nam_H_n-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.306917,
+      "longitude": 105.72033,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 26661113,
+      "name": "Bánh Tằm Ngan Dừa (Cô Nhãn)",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d26661113-Reviews-Banh_T_m_Ngan_D_a_Co_Nhan-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.2942,
+      "longitude": 105.7287,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 13969582,
+      "name": "Lang Nuong 89",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d13969582-Reviews-Lang_Nuong_89-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.29984,
+      "longitude": 105.72088,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Grill"
+      ]
+    },
+    {
+      "id": 26866994,
+      "name": "Vịt & Bao Tử Hầm Tiêu Cô Châu - Bạc Liêu",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6936569-d26866994-Reviews-V_t_Bao_T_H_m_Tieu_Co_Chau_B_c_Lieu-Bac_Lieu_Bac_Lieu_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    }
+  ]
+}

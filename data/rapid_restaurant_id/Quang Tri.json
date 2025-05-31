@@ -1,0 +1,425 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g2146290-Quang_Tri_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 20,
+  "items_count": 20,
+  "results": [
+    {
+      "id": 10768959,
+      "name": "Tan Chau Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d10768959-Reviews-Tan_Chau_Restaurant-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 19,
+      "rating": 3.6,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/26/6c/a9/nha-hang-tan-chau.jpg",
+      "latitude": 16.81855,
+      "longitude": 107.106316,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 28031186,
+      "name": "Nhà Hàng Phúc An",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g15333410-d28031186-Reviews-Nha_Hang_Phuc_An-Quang_Tri_Quang_Tri_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/17/2d/14/caption.jpg",
+      "latitude": 16.753014,
+      "longitude": 107.197,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood",
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 13372827,
+      "name": "Sachi Japanese Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d13372827-Reviews-Sachi_Japanese_Restaurant-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 13,
+      "rating": 4.8,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/b9/c1/67/getlstd-property-photo.jpg",
+      "latitude": 16.810036,
+      "longitude": 107.10302,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Japanese"
+      ]
+    },
+    {
+      "id": 27944439,
+      "name": "Sepon Farm-to-table Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g15333410-d27944439-Reviews-Sepon_Farm_to_table_Restaurant-Quang_Tri_Quang_Tri_Province.html",
+      "reviews": 6,
+      "rating": 5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/8a/d2/37/sepon-farm-to-table-restaurant.jpg",
+      "latitude": 16.676271,
+      "longitude": 107.260735,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Seafood",
+        "Asian",
+        "Healthy",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 17695314,
+      "name": "Tiem Com Hoang Chan",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d17695314-Reviews-Tiem_Com_Hoang_Chan-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/36/e0/05/tiem-com-hoang-chan.jpg",
+      "latitude": 16.82141,
+      "longitude": 107.10338,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Fast Food",
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 16152154,
+      "name": "Tam’s Cafe",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g3334688-d16152154-Reviews-Tam_s_Cafe-Khe_Sanh_Quang_Tri_Province.html",
+      "reviews": 4,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/8c/c2/d4/photo4jpg.jpg",
+      "latitude": 16.63045,
+      "longitude": 106.73855,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Fast Food",
+        "Deli",
+        "Vietnamese",
+        "Street Food"
+      ]
+    },
+    {
+      "id": 6496040,
+      "name": "Pho Hang",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d6496040-Reviews-Pho_Hang-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 4,
+      "rating": 4.8,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 16.81651,
+      "longitude": 107.08155,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese",
+        "Soups"
+      ]
+    },
+    {
+      "id": 25215951,
+      "name": "Bamboo Resturant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1028732-d25215951-Reviews-Bamboo_Resturant-Lao_Bao_Quang_Tri_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/a1/c4/64/caption.jpg",
+      "latitude": 16.616388,
+      "longitude": 106.59901,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 25236715,
+      "name": "Rex Restaurant & Bar",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d25236715-Reviews-Rex_Restaurant_Bar-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 16.82873,
+      "longitude": 107.09329,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Bar",
+        "Asian",
+        "Pub",
+        "Vietnamese",
+        "Beer restaurants"
+      ]
+    },
+    {
+      "id": 13422836,
+      "name": "Cheese",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g3334688-d13422836-Reviews-Cheese-Khe_Sanh_Quang_Tri_Province.html",
+      "reviews": 7,
+      "rating": 2.9,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/a4/54/81/ta-img-20181207-191016.jpg",
+      "latitude": 16.62837,
+      "longitude": 106.73939,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian",
+        "American",
+        "Cafe"
+      ]
+    },
+    {
+      "id": 27794677,
+      "name": "Nhà Hàng Làng Nghệ - Quảng Trị",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d27794677-Reviews-Nha_Hang_Lang_Ngh_Qu_ng_Tr-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 16.81625,
+      "longitude": 107.10031,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Asian",
+        "Dining bars",
+        "Beer restaurants"
+      ]
+    },
+    {
+      "id": 10470442,
+      "name": "Bike Pub",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d10470442-Reviews-Bike_Pub-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/5e/4b/eb/bike-pub.jpg",
+      "latitude": 16.819157,
+      "longitude": 107.10535,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Brew Pub",
+        "Cafe",
+        "Pub",
+        "Diner"
+      ]
+    },
+    {
+      "id": 27975407,
+      "name": "Tiệm Pizza 07",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d27975407-Reviews-Ti_m_Pizza_07-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/a9/6c/5d/caption.jpg",
+      "latitude": 16.815277,
+      "longitude": 107.10426,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Pizza"
+      ]
+    },
+    {
+      "id": 28145923,
+      "name": "Phở Lâm Lý Quốc Sư",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d28145923-Reviews-Ph_Lam_Ly_Qu_c_Su-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.296122,
+      "longitude": 105.71605,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 28117988,
+      "name": "Phở Lý Quốc Sư",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d28117988-Reviews-Ph_Ly_Qu_c_Su-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.296122,
+      "longitude": 105.71605,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Deli",
+        "Vietnamese",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 5043982,
+      "name": "Phu Tho Pho",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d5043982-Reviews-Phu_Tho_Pho-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 16.81624,
+      "longitude": 107.10366,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 25223033,
+      "name": "GECKO - Pub & Coffee",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d25223033-Reviews-GECKO_Pub_Coffee-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 16.811752,
+      "longitude": 107.101944,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Brew Pub",
+        "Cafe",
+        "Pub",
+        "Fruit parlours",
+        "Dining bars"
+      ]
+    },
+    {
+      "id": 20860846,
+      "name": "Hawaii's Pizza",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d20860846-Reviews-Hawaii_s_Pizza-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/56/8c/18/pizza-hawaii-s-dong-ha.jpg",
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 14985841,
+      "name": "Chao Ca Loc Ba Vui",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d14985841-Reviews-Chao_Ca_Loc_Ba_Vui-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 16.811127,
+      "longitude": 107.0998,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 27509554,
+      "name": "Mỳ Quảng - Bún Chả Cá - Cô Hạnh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811042-d27509554-Reviews-M_Qu_ng_Bun_Ch_Ca_Co_H_nh-Dong_Ha_Quang_Tri_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 16.820143,
+      "longitude": 107.0991,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Fusion",
+        "Vietnamese"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g1535794-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 10,
+  "items_count": 10,
+  "results": [
+    {
+      "id": 11706772,
+      "name": "La VANG - Trà Vinh Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d11706772-Reviews-La_VANG_Tra_Vinh_Restaurant-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 8,
+      "rating": 4.1,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/28/96/b9/m-t-ti-n.jpg",
+      "latitude": 9.94612,
+      "longitude": 106.33987,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "European",
+        "Asian",
+        "Fusion",
+        "Vietnamese",
+        "Diner"
+      ]
+    },
+    {
+      "id": 10673522,
+      "name": "Deja Vu Huynh Kha",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d10673522-Reviews-Deja_Vu_Huynh_Kha-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 7,
+      "rating": 4.3,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/71/5f/83/restaurant-on-water.jpg",
+      "latitude": 9.955471,
+      "longitude": 106.346306,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 12556465,
+      "name": "Mandi Cafe",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d12556465-Reviews-Mandi_Cafe-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 3,
+      "rating": 4.7,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/e0/ea/40/photo1jpg.jpg",
+      "latitude": 9.93466,
+      "longitude": 106.34256,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 10495220,
+      "name": "Coc Cafe Tra Vinh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d10495220-Reviews-Coc_Cafe_Tra_Vinh-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 2,
+      "rating": 4.5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/d8/ba/74/korean-gimbaps-and-mixed.jpg",
+      "latitude": 9.961987,
+      "longitude": 106.339165,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood"
+      ]
+    },
+    {
+      "id": 5074402,
+      "name": "Cafe - Kem",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d5074402-Reviews-Cafe_Kem-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 4,
+      "rating": 3.8,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/b6/1b/8b/cafe-kem.jpg",
+      "latitude": 9.94789,
+      "longitude": 106.341805,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe"
+      ]
+    },
+    {
+      "id": 17562853,
+      "name": "Nha Hang A Koi 6",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d17562853-Reviews-Nha_Hang_A_Koi_6-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/6e/0d/4c/corporate-event-setup.jpg",
+      "latitude": 9.968627,
+      "longitude": 106.33688,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Chinese",
+        "Seafood",
+        "Asian",
+        "Deli",
+        "Vietnamese",
+        "Singaporean"
+      ]
+    },
+    {
+      "id": 3774122,
+      "name": "Anh Thien",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d3774122-Reviews-Anh_Thien-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 6,
+      "rating": 3.5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.93958,
+      "longitude": 106.33959,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 12621434,
+      "name": "Pho Xanh Coffee",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d12621434-Reviews-Pho_Xanh_Coffee-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/c7/b6/14/getlstd-property-photo.jpg",
+      "latitude": 9.93167,
+      "longitude": 106.33981,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Asian"
+      ]
+    },
+    {
+      "id": 16754628,
+      "name": "King Beer Garden Tra Vinh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d16754628-Reviews-King_Beer_Garden_Tra_Vinh-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.936444,
+      "longitude": 106.332405,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 19857085,
+      "name": "Kim Phung Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1535794-d19857085-Reviews-Kim_Phung_Restaurant-Tra_Vinh_Tra_Vinh_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Fast Food",
+        "Asian",
+        "Deli",
+        "Vietnamese",
+        "Soups"
+      ]
+    }
+  ]
+}

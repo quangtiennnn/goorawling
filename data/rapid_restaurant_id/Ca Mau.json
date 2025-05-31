@@ -1,0 +1,184 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g1568668-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 9,
+  "items_count": 9,
+  "results": [
+    {
+      "id": 12894983,
+      "name": "Cua Thu Thiet-Dac San Ca Mau",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d12894983-Reviews-Cua_Thu_Thiet_Dac_San_Ca_Mau-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": "$$$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/29/18/c5/cua-s-t-bo-t-i.jpg",
+      "latitude": 9.184072,
+      "longitude": 105.15771,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood"
+      ]
+    },
+    {
+      "id": 6210059,
+      "name": "Quán 257",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d6210059-Reviews-Quan_257-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 6,
+      "rating": 3.8,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/88/7c/b5/quan-257.jpg",
+      "latitude": 9.179014,
+      "longitude": 105.152054,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 12906588,
+      "name": "Nhà hàng Vân Thủy",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d12906588-Reviews-Nha_hang_Van_Th_y-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 2,
+      "rating": 4.5,
+      "price_range_usd": "$$$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/a9/9b/1b/getlstd-property-photo.jpg",
+      "latitude": 9.179738,
+      "longitude": 105.16122,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Seafood",
+        "Deli",
+        "Vietnamese",
+        "Diner"
+      ]
+    },
+    {
+      "id": 12481041,
+      "name": "Phuong 76 Restaurant - Broken Rice",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d12481041-Reviews-Phuong_76_Restaurant_Broken_Rice-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 3,
+      "rating": 4.3,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/71/7d/a4/com-ga-chicken-rice.jpg",
+      "latitude": 9.181443,
+      "longitude": 105.146286,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 26223053,
+      "name": "Nhà hàng Thăng Long Đất Mũi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d26223053-Reviews-Nha_hang_Thang_Long_D_t_Mui-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 8.570195,
+      "longitude": 104.825005,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Seafood",
+        "Barbecue",
+        "Vietnamese",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 13076912,
+      "name": "King BBQ Buffet Ca Mau",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d13076912-Reviews-King_BBQ_Buffet_Ca_Mau-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.178036,
+      "longitude": 105.15437,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Barbecue"
+      ]
+    },
+    {
+      "id": 32990970,
+      "name": "Thèm Bánh Mì Que",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d32990970-Reviews-Them_Banh_Mi_Que-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.164021,
+      "longitude": 105.14284,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Deli"
+      ]
+    },
+    {
+      "id": 23086349,
+      "name": "The Pizza Company",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d23086349-Reviews-The_Pizza_Company-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 9.178391,
+      "longitude": 105.15489,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Pizza"
+      ]
+    },
+    {
+      "id": 23309399,
+      "name": "First Class Pizza",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1568668-d23309399-Reviews-First_Class_Pizza-Ca_Mau_Ca_Mau_Province_Mekong_Delta.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    }
+  ]
+}

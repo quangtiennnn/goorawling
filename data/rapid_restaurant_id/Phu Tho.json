@@ -1,0 +1,67 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g4355229-Phu_Tho_Phu_Tho_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 3,
+  "items_count": 3,
+  "results": [
+    {
+      "id": 23115479,
+      "name": "The Pizza Company",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g4355229-d23115479-Reviews-The_Pizza_Company-Phu_Tho_Phu_Tho_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.312662,
+      "longitude": 105.39571,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Pizza"
+      ]
+    },
+    {
+      "id": 27487004,
+      "name": "Ducanh Cafe",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g4355229-d27487004-Reviews-Ducanh_Cafe-Phu_Tho_Phu_Tho_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.321768,
+      "longitude": 105.390366,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 26560108,
+      "name": "Maay House",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g4355229-d26560108-Reviews-Maay_House-Phu_Tho_Phu_Tho_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 10.963039,
+      "longitude": 106.68312,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Asian"
+      ]
+    }
+  ]
+}

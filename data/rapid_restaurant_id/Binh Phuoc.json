@@ -1,0 +1,84 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g6939209-Binh_Phuoc_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 4,
+  "items_count": 4,
+  "results": [
+    {
+      "id": 26835835,
+      "name": "Cava De Mitri",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12887730-d26835835-Reviews-Cava_De_Mitri-Dong_Xoai_Binh_Phuoc_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f9/ed/7d/caption.jpg",
+      "latitude": 11.523206,
+      "longitude": 106.876755,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood",
+        "European",
+        "Vietnamese",
+        "Beer restaurants"
+      ]
+    },
+    {
+      "id": 19887435,
+      "name": "Akira Sushi Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12887730-d19887435-Reviews-Akira_Sushi_Restaurant-Dong_Xoai_Binh_Phuoc_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/98/bd/d8/chuyen-ph-c-v-mon-sashimi.jpg",
+      "latitude": 11.531511,
+      "longitude": 106.88839,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 27424422,
+      "name": "Dong Ba Quan Dong Xoai",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g12887730-d27424422-Reviews-Dong_Ba_Quan_Dong_Xoai-Dong_Xoai_Binh_Phuoc_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 11.539457,
+      "longitude": 106.89838,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 32841395,
+      "name": "HanKang BBQ",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6939210-d32841395-Reviews-HanKang_BBQ-Phuoc_Long_Binh_Phuoc_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 10.819458,
+      "longitude": 106.77822,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    }
+  ]
+}

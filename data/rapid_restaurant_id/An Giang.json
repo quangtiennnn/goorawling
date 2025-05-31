@@ -1,0 +1,47 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g644038-Guang_an_Sichuan.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 2,
+  "items_count": 2,
+  "results": [
+    {
+      "id": 5057076,
+      "name": "Mingtien Coffee (Jianan Middle Road)",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g644038-d5057076-Reviews-Mingtien_Coffee_Jianan_Middle_Road-Guang_an_Sichuan.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 30.45977,
+      "longitude": 106.63976,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe"
+      ]
+    },
+    {
+      "id": 5055098,
+      "name": "C.straits Café (TiYuChang)",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g644038-d5055098-Reviews-C_straits_Cafe_TiYuChang-Guang_an_Sichuan.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe"
+      ]
+    }
+  ]
+}

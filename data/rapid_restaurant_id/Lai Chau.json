@@ -1,0 +1,47 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g811257-Lai_Chau_Lai_Chau_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 2,
+  "items_count": 2,
+  "results": [
+    {
+      "id": 18178597,
+      "name": "Nhà Hàng Mạnh Hùng",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811257-d18178597-Reviews-Nha_Hang_M_nh_Hung-Lai_Chau_Lai_Chau_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/ff/b7/0b/manh-hung-restaurant.jpg",
+      "latitude": 22.38322,
+      "longitude": 103.47245,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "European",
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 27530986,
+      "name": "Bia Phong Van",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g811257-d27530986-Reviews-Bia_Phong_Van-Lai_Chau_Lai_Chau_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 22.28333,
+      "longitude": 103.25,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    }
+  ]
+}

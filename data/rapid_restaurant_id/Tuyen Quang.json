@@ -1,0 +1,208 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g1147552-Tuyen_Quang_Tuyen_Quang_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 10,
+  "items_count": 10,
+  "results": [
+    {
+      "id": 15190189,
+      "name": "Nha hang Sen Vang BBQ Tuyen Quang",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d15190189-Reviews-Nha_hang_Sen_Vang_BBQ_Tuyen_Quang-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 3,
+      "rating": 5,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/04/10/cf/khong-gian-trong-nha.jpg",
+      "latitude": 21.817293,
+      "longitude": 105.21726,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Barbecue",
+        "Sushi",
+        "Asian",
+        "Korean"
+      ]
+    },
+    {
+      "id": 20818875,
+      "name": "Nhà Hàng Royal Tuyên Quang",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d20818875-Reviews-Nha_Hang_Royal_Tuyen_Quang-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": "https://royalplazacenter.vn/menu-co-ban/",
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/58/45/d3/nha-hang-royal-tuyen.jpg",
+      "latitude": 21.815153,
+      "longitude": 105.20805,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood",
+        "Asian",
+        "Beer restaurants",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 23954770,
+      "name": "Pizza Here",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d23954770-Reviews-Pizza_Here-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/4d/61/89/our-restaurant-from-the.jpg",
+      "latitude": 21.81727,
+      "longitude": 105.21377,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian",
+        "Pizza",
+        "Fast Food"
+      ]
+    },
+    {
+      "id": 18967018,
+      "name": "Garden BBQ",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d18967018-Reviews-Garden_BBQ-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.812086,
+      "longitude": 105.21445,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 24002260,
+      "name": "Nha Hang Hoa Vien",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d24002260-Reviews-Nha_Hang_Hoa_Vien-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 1,
+      "rating": 3,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/1a/2d/3a/fish-vegetable-meat-in.jpg",
+      "latitude": 21.822647,
+      "longitude": 105.18148,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 9982805,
+      "name": "BBQ",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d9982805-Reviews-BBQ-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 6,
+      "rating": 3.8,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/76/d6/fb/photo3jpg.jpg",
+      "latitude": 21.818092,
+      "longitude": 105.21422,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian",
+        "Pizza",
+        "Fast Food"
+      ]
+    },
+    {
+      "id": 17435025,
+      "name": "Hanos 75",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d17435025-Reviews-Hanos_75-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/79/ac/4c/20190508-144309-largejpg.jpg",
+      "latitude": 21.81653,
+      "longitude": 105.21356,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Barbecue",
+        "Pub",
+        "Vietnamese",
+        "Wine Bar"
+      ]
+    },
+    {
+      "id": 18970258,
+      "name": "Hem Quan Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d18970258-Reviews-Hem_Quan_Restaurant-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.824467,
+      "longitude": 105.21113,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 21071793,
+      "name": "Nhà hàng Hộ Nhâm",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d21071793-Reviews-Nha_hang_H_Nham-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/9b/43/a9/nha-hang-h-nham.jpg",
+      "latitude": 21.769018,
+      "longitude": 105.14026,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 12908083,
+      "name": "CHAO Đem : Lieu Cuong 01",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1147552-d12908083-Reviews-CHAO_Dem_Lieu_Cuong_01-Tuyen_Quang_Tuyen_Quang_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 22.063683,
+      "longitude": 105.03437,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cajun & Creole"
+      ]
+    }
+  ]
+}

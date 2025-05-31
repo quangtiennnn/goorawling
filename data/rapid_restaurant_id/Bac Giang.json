@@ -1,0 +1,68 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g6776104-Bac_Giang_Bac_Giang_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 3,
+  "items_count": 3,
+  "results": [
+    {
+      "id": 24136292,
+      "name": "Nhà Hàng Hải Sản Ghẹ Xanh Bắc Giang",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6776104-d24136292-Reviews-Nha_Hang_H_i_S_n_Gh_Xanh_B_c_Giang-Bac_Giang_Bac_Giang_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": "$$$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/37/39/fc/nha-hang-h-i-s-n-gh-xanh.jpg",
+      "latitude": 21.26671,
+      "longitude": 106.20224,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Seafood",
+        "Asian",
+        "Deli",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 28647517,
+      "name": "Mandala Dimsum Corner",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6776104-d28647517-Reviews-Mandala_Dimsum_Corner-Bac_Giang_Bac_Giang_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.27307,
+      "longitude": 106.1946,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Chinese",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 12588446,
+      "name": "Cao Lan Cuisine",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g6776104-d12588446-Reviews-Cao_Lan_Cuisine-Bac_Giang_Bac_Giang_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": "$$$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/ce/a3/hot-pot.jpg",
+      "latitude": 21.28113,
+      "longitude": 106.19871,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    }
+  ]
+}

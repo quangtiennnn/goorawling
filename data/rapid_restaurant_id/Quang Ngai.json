@@ -1,0 +1,572 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g651661-Quang_Ngai_Quang_Ngai_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 29,
+  "items_count": 29,
+  "results": [
+    {
+      "id": 8494891,
+      "name": "Viet Chay Sala",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d8494891-Reviews-Viet_Chay_Sala-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 29,
+      "rating": 4.1,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/04/2b/2b/buffet-chay-tuy-t-ngon.jpg",
+      "latitude": 15.119281,
+      "longitude": 108.809074,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian",
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 6922195,
+      "name": "Nhung 2 Cơm Gà",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d6922195-Reviews-Nhung_2_Com_Ga-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 27,
+      "rating": 3.7,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/3d/2f/63/img20181103193816-largejpg.jpg",
+      "latitude": 15.1201,
+      "longitude": 108.80195,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 27410999,
+      "name": "Herbal Pizza & Steak Quảng Ngãi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d27410999-Reviews-Herbal_Pizza_Steak_Qu_ng_Ngai-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 5,
+      "rating": 4,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/65/a0/3b/caption.jpg",
+      "latitude": 15.128874,
+      "longitude": 108.80949,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian"
+      ]
+    },
+    {
+      "id": 10834782,
+      "name": "Quan an Co Hanh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d10834782-Reviews-Quan_an_Co_Hanh-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 4,
+      "rating": 4.8,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/c1/93/c1/getlstd-property-photo.jpg",
+      "latitude": 15.12435,
+      "longitude": 108.80464,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 12504887,
+      "name": "Kawaii Sushi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d12504887-Reviews-Kawaii_Sushi-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 4,
+      "rating": 5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/02/16/5b/sushi-moriwase.jpg",
+      "latitude": 15.119384,
+      "longitude": 108.80296,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Fast Food",
+        "Sushi",
+        "Korean"
+      ]
+    },
+    {
+      "id": 6780900,
+      "name": "Com Nieu Hoa Sua",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d6780900-Reviews-Com_Nieu_Hoa_Sua-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 6,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/6f/b9/38/great-chicken-with-garlic.jpg",
+      "latitude": 15.129887,
+      "longitude": 108.78793,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 24992266,
+      "name": "Cơm Niêu Bến Sông Quê",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d24992266-Reviews-Com_Nieu_B_n_Song_Que-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 2,
+      "rating": 3,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/e5/28/32/caption.jpg",
+      "latitude": 15.133945,
+      "longitude": 108.8024,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Deli",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 25280159,
+      "name": "Cơm Niêu Bếp Nhà Gạo - Cơ Sở 2",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d25280159-Reviews-Com_Nieu_B_p_Nha_G_o_Co_S_2-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 1,
+      "price_range_usd": "$$$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/04/36/4e/nha-hang-n-m-v-tri-trung.jpg",
+      "latitude": 15.150858,
+      "longitude": 108.78235,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 13975508,
+      "name": "Bolo Bala Beer Club",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d13975508-Reviews-Bolo_Bala_Beer_Club-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/02/9e/d2/staff-restaurant.jpg",
+      "latitude": 15.10311,
+      "longitude": 108.79934,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "American",
+        "European"
+      ]
+    },
+    {
+      "id": 23396482,
+      "name": "Cơm Niêu Cây Khế",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d23396482-Reviews-Com_Nieu_Cay_Kh-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.125721,
+      "longitude": 108.79763,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 27414316,
+      "name": "The Thai Cuisine Quảng Ngãi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d27414316-Reviews-The_Thai_Cuisine_Qu_ng_Ngai-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/78/6b/91/caption.jpg",
+      "latitude": 15.122696,
+      "longitude": 108.79878,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Thai"
+      ]
+    },
+    {
+      "id": 12711232,
+      "name": "Nha Hang Hai San Sake",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d12711232-Reviews-Nha_Hang_Hai_San_Sake-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/19/0c/2c/getlstd-property-photo.jpg",
+      "latitude": 15.1176,
+      "longitude": 108.80235,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Brew Pub",
+        "Seafood",
+        "Fast Food",
+        "Pub",
+        "Fusion"
+      ]
+    },
+    {
+      "id": 26321337,
+      "name": "Min coffee",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d26321337-Reviews-Min_coffee-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/f7/fc/da/caption.jpg",
+      "latitude": 15.130312,
+      "longitude": 108.78762,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese",
+        "Healthy",
+        "Fruit parlours",
+        "Medicinal foods",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 27414097,
+      "name": "Bánh Mì Thành Phát",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d27414097-Reviews-Banh_Mi_Thanh_Phat-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/7a/e4/7b/caption.jpg",
+      "latitude": 15.699841,
+      "longitude": 108.34142,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 14910730,
+      "name": "Nha Hang Sake Beer",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d14910730-Reviews-Nha_Hang_Sake_Beer-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/1c/8d/cc/nha-hang-sake-beer.jpg",
+      "latitude": 15.125908,
+      "longitude": 108.79701,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Fusion"
+      ]
+    },
+    {
+      "id": 13564118,
+      "name": "Light Star Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d13564118-Reviews-Light_Star_Restaurant-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/33/c9/42/nha-hang-light-star-01.jpg",
+      "latitude": 15.1257,
+      "longitude": 108.79269,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 17852780,
+      "name": "Thu Bup Mi Quang",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d17852780-Reviews-Thu_Bup_Mi_Quang-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 1,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.12073,
+      "longitude": 108.7863,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 14776470,
+      "name": "Pizza Kids",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d14776470-Reviews-Pizza_Kids-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 3,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/9a/59/bf/fb-img-1547549953101.jpg",
+      "latitude": 15.112764,
+      "longitude": 108.78562,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian"
+      ]
+    },
+    {
+      "id": 32876932,
+      "name": "Hân Trang Quán Ram Bún Thit Nuöng Cà Phé",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d32876932-Reviews-Han_Trang_Quan_Ram_Bun_Thit_Nuong_Ca_Phe-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/b0/aa/fd/caption.jpg",
+      "latitude": 21.581722,
+      "longitude": 105.81767,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 23131112,
+      "name": "Bombay Rooftop - Drinking & Chilling",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d23131112-Reviews-Bombay_Rooftop_Drinking_Chilling-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 3,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/9b/17/e0/chilling.jpg",
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Bar",
+        "Pub"
+      ]
+    },
+    {
+      "id": 11791408,
+      "name": "Quan Com Ga Yen",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d11791408-Reviews-Quan_Com_Ga_Yen-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 3,
+      "rating": 3.7,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/86/1f/67/getlstd-property-photo.jpg",
+      "latitude": 15.122549,
+      "longitude": 108.80421,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 23918090,
+      "name": "Mì Quảng Tam Thanh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d23918090-Reviews-Mi_Qu_ng_Tam_Thanh-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.111338,
+      "longitude": 108.80337,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Fast Food",
+        "Deli"
+      ]
+    },
+    {
+      "id": 21282922,
+      "name": "Dêré Cao Nguyên",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d21282922-Reviews-Dere_Cao_Nguyen-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.118197,
+      "longitude": 108.82171,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 14450664,
+      "name": "Quan Ngon",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d14450664-Reviews-Quan_Ngon-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.105094,
+      "longitude": 108.80214,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 6277214,
+      "name": "Markthalle, Stand Nr. E 027 Frau Pham Thi Chanh",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d6277214-Reviews-Markthalle_Stand_Nr_E_027_Frau_Pham_Thi_Chanh-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 1,
+      "rating": 4,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 22953418,
+      "name": "Pizza Min",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d22953418-Reviews-Pizza_Min-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.1255,
+      "longitude": 108.8111,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Italian"
+      ]
+    },
+    {
+      "id": 21034459,
+      "name": "Kichi Kichi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d21034459-Reviews-Kichi_Kichi-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": null,
+      "longitude": null,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Japanese"
+      ]
+    },
+    {
+      "id": 10766407,
+      "name": "Vinh Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d10766407-Reviews-Vinh_Restaurant-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.12305,
+      "longitude": 108.80297,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 32993785,
+      "name": "The Thai Cuisine",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g651661-d32993785-Reviews-The_Thai_Cuisine-Quang_Ngai_Quang_Ngai_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 15.13183,
+      "longitude": 108.78799,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    }
+  ]
+}

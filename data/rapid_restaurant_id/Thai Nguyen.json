@@ -1,0 +1,410 @@
+{
+  "link": "https://www.tripadvisor.com/Restaurants-g2146324-Thai_Nguyen_Province.html",
+  "total_pages": 1,
+  "current_page": 1,
+  "total_items_count": 20,
+  "items_count": 20,
+  "results": [
+    {
+      "id": 4542278,
+      "name": "Thai Hai Ethnic Village",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d4542278-Reviews-Thai_Hai_Ethnic_Village-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 22,
+      "rating": 4.7,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/f4/7d/ef/have-you-try-sleeping.jpg",
+      "latitude": 21.532064,
+      "longitude": 105.81339,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 13912807,
+      "name": "Quan Nha Toi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d13912807-Reviews-Quan_Nha_Toi-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 19,
+      "rating": 4.8,
+      "price_range_usd": "$$$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/66/6d/8b/getlstd-property-photo.jpg",
+      "latitude": 21.643229,
+      "longitude": 105.78892,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Thai",
+        "Deli",
+        "Grill",
+        "Healthy"
+      ]
+    },
+    {
+      "id": 12610217,
+      "name": "Dam Xanh Cafe",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d12610217-Reviews-Dam_Xanh_Cafe-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 7,
+      "rating": 5,
+      "price_range_usd": "$$$$",
+      "is_sponsored": false,
+      "menu_link": "https://cafedamxanh.cukcuk.vn/order-online",
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/30/a6/67/cafe-d-m-xanh.jpg",
+      "latitude": 21.5919,
+      "longitude": 105.84095,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 33116909,
+      "name": "Thịt Chó Chiến Đen - Quán Nhậu Thịt Chó Ngon Bến Xe Mới Thái Nguyên",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d33116909-Reviews-Th_t_Cho_Chi_n_Den_Quan_Nh_u_Th_t_Cho_Ngon_B_n_Xe_M_i_Thai_Nguyen-Thai_Nguyen_T.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/d2/ee/90/th-t-cho-7-mon-h-p-d.jpg",
+      "latitude": 21.575129,
+      "longitude": 105.831116,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Chinese",
+        "Asian",
+        "Vietnamese",
+        "Indonesian"
+      ]
+    },
+    {
+      "id": 12542767,
+      "name": "Beer 158 Minh Cau",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d12542767-Reviews-Beer_158_Minh_Cau-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 3,
+      "rating": 4.3,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/91/11/02/getlstd-property-photo.jpg",
+      "latitude": 21.588198,
+      "longitude": 105.838486,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Brew Pub",
+        "Pub"
+      ]
+    },
+    {
+      "id": 26685083,
+      "name": "MÓN NGON BẢN THÁI",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d26685083-Reviews-MON_NGON_B_N_THAI-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/71/f5/6e/indulge-in-a-diverse.jpg",
+      "latitude": 21.59502,
+      "longitude": 105.83911,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian",
+        "Fusion",
+        "Diner",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 26220362,
+      "name": "Skybeer Restaurant ",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d26220362-Reviews-Skybeer_Restaurant-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/76/60/bc/caption.jpg",
+      "latitude": 21.59502,
+      "longitude": 105.83911,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 10687616,
+      "name": "Tafelu Quan",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d10687616-Reviews-Tafelu_Quan-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 5,
+      "rating": 4.6,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/64/65/9a/table-with-all-the-sauces.jpg",
+      "latitude": 21.59502,
+      "longitude": 105.83911,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Barbecue"
+      ]
+    },
+    {
+      "id": 12331304,
+      "name": "Osaka Sushi",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d12331304-Reviews-Osaka_Sushi-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 2,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.58586,
+      "longitude": 105.82983,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Japanese"
+      ]
+    },
+    {
+      "id": 13325365,
+      "name": "Tokyo Japanese Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d13325365-Reviews-Tokyo_Japanese_Restaurant-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 1,
+      "rating": 5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/09/c6/e9/caption.jpg",
+      "latitude": 21.586374,
+      "longitude": 105.842735,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Japanese"
+      ]
+    },
+    {
+      "id": 6708874,
+      "name": "Mình Hoach Fresh Chicken King Restaurant",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d6708874-Reviews-Minh_Hoach_Fresh_Chicken_King_Restaurant-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 4,
+      "rating": 4.5,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/06/06/1b/minh-hoach-fresh-chicken.jpg",
+      "latitude": 21.59539,
+      "longitude": 105.84553,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 8862116,
+      "name": "Cafe New Space",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d8862116-Reviews-Cafe_New_Space-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 4,
+      "rating": 4.5,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ca/a0/69/hay-d-n-va-thu-ng-th.jpg",
+      "latitude": 21.59163,
+      "longitude": 105.84624,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Vietnamese"
+      ]
+    },
+    {
+      "id": 18378576,
+      "name": "Nha Hang Thit Cho Duc Thang",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d18378576-Reviews-Nha_Hang_Thit_Cho_Duc_Thang-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.59884,
+      "longitude": 105.81931,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Brazilian",
+        "Mediterranean",
+        "Deli",
+        "South American",
+        "Egyptian",
+        "Algerian",
+        "Calabrian",
+        "Southern-Italian"
+      ]
+    },
+    {
+      "id": 10004601,
+      "name": "City View Coffee",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d10004601-Reviews-City_View_Coffee-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 2,
+      "rating": 2.5,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/d7/b7/63/passion.jpg",
+      "latitude": 21.591536,
+      "longitude": 105.83451,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": []
+    },
+    {
+      "id": 14938633,
+      "name": "Gogi House Thai Nguyen",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d14938633-Reviews-Gogi_House_Thai_Nguyen-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 2,
+      "rating": 3,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/e1/fc/4d/bu-i-t-i-lung-linh.jpg",
+      "latitude": 21.590738,
+      "longitude": 105.83881,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Grill"
+      ]
+    },
+    {
+      "id": 19055854,
+      "name": "Nha Hang Tuan Hang",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d19055854-Reviews-Nha_Hang_Tuan_Hang-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 1,
+      "rating": 1,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.53899,
+      "longitude": 105.83901,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Asian"
+      ]
+    },
+    {
+      "id": 21410154,
+      "name": "Thanh Cong BBQ Hotpot Buffet",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d21410154-Reviews-Thanh_Cong_BBQ_Hotpot_Buffet-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": "$$ - $$$",
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.568102,
+      "longitude": 105.81165,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Deli"
+      ]
+    },
+    {
+      "id": 26311694,
+      "name": "Thái Nguyên Botanic Gardens",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d26311694-Reviews-Thai_Nguyen_Botanic_Gardens-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.559126,
+      "longitude": 105.74544,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Cafe",
+        "Asian",
+        "Indigenous"
+      ]
+    },
+    {
+      "id": 32999249,
+      "name": "Breakfast Buffet The King Hotel",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g1753936-d32999249-Reviews-Breakfast_Buffet_The_King_Hotel-Thai_Nguyen_Thai_Nguyen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.59389,
+      "longitude": 105.826164,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Deli"
+      ]
+    },
+    {
+      "id": 27532352,
+      "name": "Đồng Xuân",
+      "link": "https://www.tripadvisor.com/Restaurant_Review-g13374655-d27532352-Reviews-D_ng_Xuan-Dong_Tien_Thai_Nguyen_Province.html",
+      "reviews": 0,
+      "rating": 0,
+      "price_range_usd": null,
+      "is_sponsored": false,
+      "menu_link": null,
+      "reservation_link": null,
+      "featured_image": null,
+      "latitude": 21.20636,
+      "longitude": 106.05789,
+      "has_delivery": false,
+      "is_premium": false,
+      "cuisines": [
+        "Chinese",
+        "Brew Pub",
+        "Pub",
+        "Vietnamese",
+        "Beer restaurants"
+      ]
+    }
+  ]
+}
