@@ -185,7 +185,9 @@ def getReviews(browser,number_of_reviews,file_path,constant = 0.55,thresh_hold =
         
 def reviewCrawl(link,folder_name = 'sample'):
     #====================== NAME =================================
-    coordinates = link.split('/')[6].split("=")[1].split("!")[5:7]
+    # coordinates = link.split('/')[6].split("=")[1].split("!")[5:7]
+    coordinates = link.split('/')[6].split("@")[1].split(",")[:2]
+
     name = f"{coordinates[0][2:]},{coordinates[1][2:]}"
     #====================== BROWSER SETTINGS =====================
     browser = webdriver.Chrome(options=chrome_options)
