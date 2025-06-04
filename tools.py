@@ -19,7 +19,7 @@ import csv
 import pandas as pd
 import numpy as np
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
-
+import random
 
 #====================== CHROME DRIVER SETUP ======================
 headers = {
@@ -41,20 +41,20 @@ chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
 def googlemapCrawl(district, city = 'Thành phố Hồ Chí Minh'):
     kw_input = f"Nhà hàng ở {district}, {city}"
     #====================== SEARCH ====================================
-    browser = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     path_search = "https://www.google.com/maps?hl=vi-VN"
-    browser.get(path_search)
-    input_search = browser.find_element(By.ID, "searchboxinput")
+    driver.get(path_search)
+    input_search = driver.find_element(By.ID, "searchboxinput")
     input_search.send_keys(kw_input)
     input_search.send_keys(Keys.ENTER)
     sleep(5)
     #====================== SCROLL DOWN ===============================
     start_time = time.time()
     
-    scroll_items = browser.find_elements(By.CLASS_NAME, "hfpxzc")
+    scroll_items = driver.find_elements(By.CLASS_NAME, "hfpxzc")
     while True:
       try:
-        element = browser.find_element(By.CSS_SELECTOR, 'span.HlvSq')
+        element = driver.find_element(By.CSS_SELECTOR, 'span.HlvSq')
         break
       except NoSuchElementException:
         scroll_items[1].send_keys(Keys.DOWN)
@@ -64,8 +64,8 @@ def googlemapCrawl(district, city = 'Thành phố Hồ Chí Minh'):
             print("Timeout exceeded. Exiting loop.")
             break
     #====================== HTML CONTENTS ===============================
-    html_content = browser.page_source
-    browser.quit()
+    html_content = driver.page_source
+    driver.quit()
     soup = BeautifulSoup(html_content, 'html.parser')
     elements = soup.find_all(class_='hfpxzc')
     
@@ -125,7 +125,7 @@ def data_collection(elem):
 
 
 #====================== REVIEW CRAWLING ======================
-def getReviews(browser,number_of_reviews,file_path,constant = 0.55,thresh_hold = 1000):
+def getReviews(driver,number_of_reviews,file_path,constant = 0.55,thresh_hold = 1000):
     
     #====================== LIMIT THE REVIEW ===============================
     if number_of_reviews > 1000:
@@ -133,7 +133,7 @@ def getReviews(browser,number_of_reviews,file_path,constant = 0.55,thresh_hold =
     
     #====================== SCROLL ===============================
     start_time = time.time()
-    ele_key_down= browser.find_element(By.CSS_SELECTOR, ".m6QErb.DxyBCb.kA9KIf.dS8AEf")
+    ele_key_down= driver.find_element(By.CSS_SELECTOR, ".m6QErb.DxyBCb.kA9KIf.dS8AEf")
     while True:
         ele_key_down.send_keys(Keys.DOWN)
         elapsed_time = time.time() - start_time
@@ -142,7 +142,7 @@ def getReviews(browser,number_of_reviews,file_path,constant = 0.55,thresh_hold =
     
     #====================== TAG "MORE" ===============================
     try:
-        buttons = browser.find_elements(By.CSS_SELECTOR, "button.w8nwRe.kyuRq")
+        buttons = driver.find_elements(By.CSS_SELECTOR, "button.w8nwRe.kyuRq")
         for button in buttons:
             button.click()
     except:
@@ -150,14 +150,14 @@ def getReviews(browser,number_of_reviews,file_path,constant = 0.55,thresh_hold =
     
     #====================== KEEP TAG ORIGINAL ============================
     try:
-        buttons = browser.find_elements(By.CSS_SELECTOR, "button.kyuRq.WOKzJe")
+        buttons = driver.find_elements(By.CSS_SELECTOR, "button.kyuRq.WOKzJe")
         for button in buttons:
             button.click()
     except:
         pass
 
     #====================== SAVE REVIEW ===============================
-    html_content = browser.page_source
+    html_content = driver.page_source
     soup = BeautifulSoup(html_content, 'html.parser')
     elems = soup.find_all(class_='jftiEf')
     data = []
@@ -189,28 +189,28 @@ def reviewCrawl(link,folder_name = 'sample'):
     coordinates = link.split('/')[6].split("@")[1].split(",")[:2]
 
     name = f"{coordinates[0][2:]},{coordinates[1][2:]}"
-    #====================== BROWSER SETTINGS =====================
-    browser = webdriver.Chrome(options=chrome_options)
-    actions = ActionChains(browser)
-    browser.get(link)
+    #====================== driver SETTINGS =====================
+    driver = webdriver.Chrome(options=chrome_options)
+    actions = ActionChains(driver)
+    driver.get(link)
     #=============================================================
-    browser.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]').click()
+    driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]').click()
     time.sleep(2)
-    browser.find_element(By.CSS_SELECTOR, ".HQzyZ").click()
-    # browser.find_element(By.CSS_SELECTOR, ".DVeyrd").click()
+    driver.find_element(By.CSS_SELECTOR, ".HQzyZ").click()
+    # driver.find_element(By.CSS_SELECTOR, ".DVeyrd").click()
     time.sleep(2)
     actions.send_keys(Keys.DOWN).perform()
     time.sleep(0.5)
     actions.send_keys(Keys.ENTER).perform()
     time.sleep(2)
     #=============================================================
-    number_of_reviews = int(browser.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[2]/div/div[2]/div[3]').text.split()[0].replace('.', ''))
+    number_of_reviews = int(driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[2]/div/div[2]/div[3]').text.split()[0].replace('.', ''))
     
     time.sleep(2)
 
     file_path = f'{"data_review_crawl"}/{folder_name}/{name}.csv'
 
-    getReviews(browser,number_of_reviews,file_path)
+    getReviews(driver,number_of_reviews,file_path)
 
 
 def change_language_to_english(url):
@@ -222,6 +222,25 @@ def change_language_to_english(url):
     
     # Change the 'hl' parameter to 'en'
     query_params['hl'] = 'en'
+    
+    # Reconstruct the query string
+    new_query = urlencode(query_params, doseq=True)
+    
+    # Reconstruct the full URL with the updated query string
+    new_url = urlunparse(parsed_url._replace(query=new_query))
+    
+    return new_url
+
+
+def change_language_to_vietnamese(url):
+    # Parse the URL into components
+    parsed_url = urlparse(url)
+    
+    # Parse the query parameters into a dictionary
+    query_params = parse_qs(parsed_url.query)
+    
+    # Change the 'hl' parameter to 'en'
+    query_params['hl'] = 'vi'
     
     # Reconstruct the query string
     new_query = urlencode(query_params, doseq=True)
