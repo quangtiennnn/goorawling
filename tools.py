@@ -29,14 +29,12 @@ chrome_options = Options()
 # chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox') 
 chrome_options.add_argument("--incognito")
-chrome_options.add_argument("--start-maximized")
+# chrome_options.add_argument("--start-maximized")
 chrome_options.add_argument("--disable-application-cache")
 chrome_options.add_argument("--disable-cache")
 chrome_options.add_argument("--disk-cache-size=0")
 chrome_options.add_argument("--disable-extensions")
 chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-
-
 #====================== DATA COLLECTION ======================
 def data_collection(elem):
     try:
@@ -155,10 +153,7 @@ def get_reviews(driver,number_of_reviews,file_path,constant = 0.55,thresh_hold =
     data = []
     for elem in elems:
         new_data = data_collection(elem)
-        data.append(new_data)
-        # Print progress
-        print(f"{file_path}{elem}/{number_of_reviews}")
-    
+        data.append(new_data)    
     #====================== COLLECTING DATA =================================
     header = ['name','infos','collected_date','review','categorize','review_rating']
     if len(file_path.split('/')) > 1:
@@ -186,9 +181,9 @@ def get_images(driver,file_path):
     restaurant_id = file_path.split("/")[-1].replace(".csv", "")
     # Get all tag names except 'All' and 'Latest' :)
     elems = driver.find_elements(By.CSS_SELECTOR, '.Gpq6kf.NlVald')
-    exclude_tags = {'Tất cả', 'Mới nhất', 'All', 'Latest','Video'}
+    exclude_tags = {'tất cả', 'mới nhất', 'all', 'latest', 'video'}
     tag_names = [elem.text for elem in elems if elem.text.strip().lower() not in exclude_tags and elem.text.strip()]
-
+    
     tag_images = {}
     for tag in tag_names:
         try:
@@ -241,21 +236,21 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'sample'):
     time.sleep(random.uniform(1, 2))
     get_images(driver,images_path)
 
-    #====================== REFRESH =====================
+    #====================== RELOAD & ADD  ========================
     driver.get(link)
     time.sleep(random.uniform(3, 5))
     #=============================================================
     driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]').click()
     tag_click(driver,'Bài đánh giá')
 
-    time.sleep(2)
+    time.sleep(random.uniform(1, 2))
     driver.find_element(By.CSS_SELECTOR, ".HQzyZ").click()
     # driver.find_element(By.CSS_SELECTOR, ".DVeyrd").click()       
-    time.sleep(2)
+    time.sleep(random.uniform(1, 2))
     actions.send_keys(Keys.DOWN).perform()
-    time.sleep(0.5)
+    time.sleep(random.uniform(0.5, 1))
     actions.send_keys(Keys.ENTER).perform()
-    time.sleep(2)
+    time.sleep(random.uniform(1, 2))
     #=============================================================
     number_of_reviews = int(driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[2]/div/div[2]/div[3]').text.split()[0].replace('.', ''))
     
