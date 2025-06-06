@@ -9,6 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 ## PACKAGES:
 import re
@@ -207,20 +209,45 @@ def get_images(driver,file_path):
         if not os.path.exists(directory):
             os.makedirs(directory)
 
-    # Write to CSV: columns = restaurant_id, images (as JSON)
+    # Write to JSON: filename = restaurant_id.json
+    json_path = os.path.join(directory, f"{restaurant_id}.json")
     try:
-        with open(file_path, mode='w', newline='', encoding='utf-8-sig') as file:
-            csv_writer = csv.writer(file)
-            csv_writer.writerow(['restaurant_id', 'images'])
-            csv_writer.writerow([restaurant_id, tag_images])
+        with open(json_path, mode='w', encoding='utf-8-sig') as file:
+            json.dump({'restaurant_id': restaurant_id, 'images': tag_images}, file, ensure_ascii=False, indent=2)
     except:
         pass
 
+#====================== GET RESTAURANT LINK ======================
+def get_name_address_list(df):
+    """
+    Extracts restaurant names and addresses from a DataFrame and returns them as a list of strings.
+    """
+    return [" ".join([str(row['name']), str(row['address_string'])]) for _, row in df.iterrows()]
+
+def get_restaurant_link(driver,restaurant_string:str):
+    """
+    Searches for a restaurant on Google Maps and returns the link to the first result.
+    """
+    WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, '.fontBodyMedium.searchboxinput.xiQnY')))
+    input_goo = driver.find_element(By.CSS_SELECTOR, '.fontBodyMedium.searchboxinput.xiQnY')
+    find_button = driver.find_element(By.CSS_SELECTOR, '.mL3xi')
+    time.sleep(1)
+    input_goo.clear()
+    input_goo.send_keys(restaurant_string)
+    find_button.click()
+    time.sleep(3)
+    try: 
+        get_first_restaurant = driver.find_element(By.CSS_SELECTOR, '.hfpxzc')
+        restaurant_link =  get_first_restaurant.get_attribute('href')
+    except NoSuchElementException:
+        restaurant_link = driver.current_url
+    time.sleep(2)
+    return change_language_to_vietnamese(restaurant_link)
 
 #====================== REVIEW CRAWLING ======================
 def google_crawl(restaurant_id: str, link, folder_name: str = 'sample'):
-    images_path = f'{folder_name}/images/{restaurant_id}.csv'
-    reviews_path = f'{folder_name}/reviews/{restaurant_id}.csv'
+    images_path = f'{str(folder_name)}/images/{str(restaurant_id)}.csv'
+    reviews_path = f'{str(folder_name)}/reviews/{str(restaurant_id)}.csv'
     #====================== driver SETTINGS =====================
     driver = webdriver.Chrome(options=chrome_options)
     actions = ActionChains(driver)
@@ -245,7 +272,7 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'sample'):
 
     time.sleep(random.uniform(1, 2))
     driver.find_element(By.CSS_SELECTOR, ".HQzyZ").click()
-    # driver.find_element(By.CSS_SELECTOR, ".DVeyrd").click()       
+    # driver.find_element(By.CSS_SELECTOR, ".DVeyrd").click()
     time.sleep(random.uniform(1, 2))
     actions.send_keys(Keys.DOWN).perform()
     time.sleep(random.uniform(0.5, 1))
