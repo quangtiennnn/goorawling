@@ -34,8 +34,8 @@ class Goorawling:
         self.get_images(images_path)
 
 
-# goorawler = Goorawling('https://www.google.com/maps/?hl=vi')
-# goorawler.open()
+goorawler = Goorawling('https://www.google.com/maps/?hl=vi')
+goorawler.open()
 # goorawler.move_to_all_photos()
 # goorawler.get_images('sample/images/123.csv')
 # goorawler.close()
