@@ -25,7 +25,7 @@ A Streamlit web app for uploading CSV files, selecting row ranges, and running m
 
 1. Clone this repository:
     ```
-    git clone https://github.com/yourusername/goorawling.git
+    git clone https://github.com/quangtiennnn/goorawling.git
     cd goorawling
     ```
 
@@ -47,3 +47,4 @@ Upload your CSV file and follow the on-screen instructions.
 
 - streamlit
 - pandas
+- selenium
