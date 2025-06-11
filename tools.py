@@ -118,11 +118,17 @@ def change_language_to_vietnamese(url):
     return new_url
 
 #====================== REVIEW CRAWLING ======================
-def get_reviews(driver,number_of_reviews,file_path,constant = 0.55,thresh_hold = 1000):
+def get_reviews(driver,number_of_reviews,file_path,constant = 0.25,thresh_hold = 2000):
     #====================== LIMIT THE REVIEW ===============================
     if number_of_reviews > thresh_hold:
         number_of_reviews = thresh_hold
-    
+    if number_of_reviews != 0:
+        # Wait for the reviews to load before proceeding
+        WebDriverWait(driver, 30).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, '.jftiEf'))
+        )
+        # print("GOOOOOO!!!")
+        
     #====================== SCROLL ===============================
     start_time = time.time()
     ele_key_down= driver.find_element(By.CSS_SELECTOR, ".m6QErb.DxyBCb.kA9KIf.dS8AEf")
@@ -245,7 +251,7 @@ def get_restaurant_link(driver,restaurant_string:str):
     return change_language_to_vietnamese(restaurant_link)
 
 #====================== REVIEW CRAWLING ======================
-def google_crawl(restaurant_id: str, link, folder_name: str = 'sample'):
+def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data'):
     images_path = f'{str(folder_name)}/images/{str(restaurant_id)}.csv'
     reviews_path = f'{str(folder_name)}/reviews/{str(restaurant_id)}.csv'
     #====================== driver SETTINGS =====================
@@ -264,8 +270,27 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'sample'):
     get_images(driver,images_path)
 
     #====================== RELOAD & ADD  ========================
+    chrome_options_extra = Options()
+    chrome_options_extra = chrome_options
+    prefs = {
+        "profile.managed_default_content_settings.images": 2,
+        "profile.default_content_setting_values.notifications": 2,
+        "profile.managed_default_content_settings.stylesheets": 2,
+        "profile.managed_default_content_settings.cookies": 2,
+        "profile.managed_default_content_settings.javascript": 1,  # Keep JS enabled if needed
+        "profile.managed_default_content_settings.plugins": 2,
+        "profile.managed_default_content_settings.popups": 2,
+        "profile.managed_default_content_settings.geolocation": 2,
+        "profile.managed_default_content_settings.media_stream": 2,
+    }
+
+    chrome_options_extra.add_experimental_option("prefs", prefs)
+    driver.close()
+    driver = webdriver.Chrome(options=chrome_options_extra)
     driver.get(link)
-    time.sleep(random.uniform(3, 5))
+    actions = ActionChains(driver)
+    driver.execute_script("document.body.style.zoom='25%'")
+    time.sleep(random.uniform(5, 7))
     #=============================================================
     driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]').click()
     tag_click(driver,'Bài đánh giá')
@@ -283,4 +308,5 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'sample'):
     
     time.sleep(2)
     time.sleep(random.uniform(3, 5))
+    
     get_reviews(driver,number_of_reviews,reviews_path)
