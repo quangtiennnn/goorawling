@@ -10,21 +10,40 @@
     </span>
 </p>
 
----
+# Goorawling Streamlit App
 
-Welcome to the Goorawling project!
-
-(Add more details about your project here...)
-
-## About
-
-(Describe your project.)
+A Streamlit web app for uploading CSV files, selecting row ranges, and running multi-threaded crawling tasks.
 
 ## Features
 
-* Feature 1
-* Feature 2
+- Upload a CSV file and preview its contents
+- Select a range of rows to process
+- Set the number of threads for crawling
+- Run a custom crawl function on selected rows
 
-## Getting Started
+## Installation
 
-(How to get your project set up.)
+1. Clone this repository:
+    ```
+    git clone https://github.com/yourusername/goorawling.git
+    cd goorawling
+    ```
+
+2. Install dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+Run the Streamlit app:
+```
+streamlit run setup.py
+```
+
+Upload your CSV file and follow the on-screen instructions.
+
+## Dependencies
+
+- streamlit
+- pandas

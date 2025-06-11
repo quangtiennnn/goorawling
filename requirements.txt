@@ -1,0 +1,9 @@
+
+streamlit
+pandas
+concurrent.futures
+numpy
+requests
+beautifulsoup4
+lxml
+selenium
