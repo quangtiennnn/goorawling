@@ -292,7 +292,10 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data'):
     driver.execute_script("document.body.style.zoom='25%'")
     time.sleep(random.uniform(5, 7))
     #=============================================================
-    driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]').click()
+    element = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]'))
+    )
+    element.click()
     tag_click(driver,'Bài đánh giá')
 
     time.sleep(random.uniform(1, 2))
