@@ -1,3 +1,4 @@
 .env
 /crawled_data
 data/rapid_restaurant_id
+notebooks/
