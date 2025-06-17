@@ -118,7 +118,7 @@ def change_language_to_vietnamese(url):
     return new_url
 
 #====================== REVIEW CRAWLING ======================
-def get_reviews(driver,number_of_reviews,file_path,constant = 0.25,thresh_hold = 2000):
+def get_reviews(driver, number_of_reviews, file_path, constant=0.25, thresh_hold=4000):
     #====================== LIMIT THE REVIEW ===============================
     if number_of_reviews > thresh_hold:
         number_of_reviews = thresh_hold
@@ -127,15 +127,16 @@ def get_reviews(driver,number_of_reviews,file_path,constant = 0.25,thresh_hold =
         WebDriverWait(driver, 30).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, '.jftiEf'))
         )
-        # print("GOOOOOO!!!")
         
     #====================== SCROLL ===============================
     start_time = time.time()
-    ele_key_down= driver.find_element(By.CSS_SELECTOR, ".m6QErb.DxyBCb.kA9KIf.dS8AEf")
+    ele_key_down = driver.find_element(By.CSS_SELECTOR, ".m6QErb.DxyBCb.kA9KIf.dS8AEf")
     while True:
-        ele_key_down.send_keys(Keys.DOWN)
+        for _ in range(10):  # Send PAGE_DOWN 10 times per loop
+            ele_key_down.send_keys(Keys.PAGE_DOWN)
+        time.sleep(0.1)
         elapsed_time = time.time() - start_time
-        if elapsed_time > float(constant)*float(number_of_reviews):
+        if elapsed_time > float(constant) * float(number_of_reviews):
             break
     
     #====================== TAG "MORE" ===============================
@@ -143,7 +144,7 @@ def get_reviews(driver,number_of_reviews,file_path,constant = 0.25,thresh_hold =
         buttons = driver.find_elements(By.CSS_SELECTOR, "button.w8nwRe.kyuRq")
         for button in buttons:
             button.click()
-    except:
+    except Exception:
         pass
     
     #====================== KEEP TAG ORIGINAL ============================
@@ -151,7 +152,7 @@ def get_reviews(driver,number_of_reviews,file_path,constant = 0.25,thresh_hold =
         buttons = driver.find_elements(By.CSS_SELECTOR, "button.kyuRq.WOKzJe")
         for button in buttons:
             button.click()
-    except:
+    except Exception:
         pass
 
     #====================== SAVE REVIEW ===============================
@@ -162,32 +163,34 @@ def get_reviews(driver,number_of_reviews,file_path,constant = 0.25,thresh_hold =
     for elem in elems:
         new_data = data_collection(elem)
         data.append(new_data)    
+
     #====================== COLLECTING DATA =================================
-    header = ['name','infos','collected_date','review','categorize','review_rating']
+    header = ['name', 'infos', 'collected_date', 'review', 'categorize', 'review_rating']
     if len(file_path.split('/')) > 1:
         directory = '/'.join(file_path.split('/')[:-1])
-    if not os.path.exists(directory):
-        os.makedirs(directory)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
     
     try:
-        with open(file_path, mode='w', newline='',encoding='utf-8-sig') as file:
+        with open(file_path, mode='w', newline='', encoding='utf-8-sig') as file:
             csv_writer = csv.writer(file)
             csv_writer.writerow(header)
             csv_writer.writerows(data)    
-    except:
-        pass
+    except Exception as e:
+        print(f"Failed to write reviews to {file_path}: {e}")
         
-
+        
 #====================== IMAGE CRAWLING ======================
 def move_to_all_photos(driver):
+    time.sleep(2)
     driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[26]/div[2]/div[2]/div[2]/div[1]/button').click()
 
 def tag_click(driver,tag):
     driver.find_element(By.XPATH, f'//div[contains(@class, "Gpq6kf") and contains(@class, "NlVald") and text()="{tag}"]').click()
 
-def get_images(driver,file_path):
+def get_images(driver, file_path):
     restaurant_id = file_path.split("/")[-1].replace(".csv", "")
-    # Get all tag names except 'All' and 'Latest' :)
+    # Get all tag names except 'All', 'Latest', 'Video', etc.
     elems = driver.find_elements(By.CSS_SELECTOR, '.Gpq6kf.NlVald')
     exclude_tags = {'tất cả', 'mới nhất', 'all', 'latest', 'video'}
     tag_names = [elem.text for elem in elems if elem.text.strip().lower() not in exclude_tags and elem.text.strip()]
@@ -195,8 +198,8 @@ def get_images(driver,file_path):
     tag_images = {}
     for tag in tag_names:
         try:
-            tag_click(driver,tag)
-            time.sleep(random.uniform(1,2))  # Wait for images to load after clicking tag
+            tag_click(driver, tag)
+            time.sleep(random.uniform(1, 2))  # Wait for images to load after clicking tag
             image_loaded = driver.find_elements(By.CSS_SELECTOR, '.Uf0tqf.loaded')
             urls = []
             for image in image_loaded:
@@ -208,7 +211,7 @@ def get_images(driver,file_path):
             tag_images[tag] = urls
         except Exception:
             tag_images[tag] = []
-            
+    
     # Prepare directory
     if len(file_path.split('/')) > 1:
         directory = '/'.join(file_path.split('/')[:-1])
@@ -220,8 +223,8 @@ def get_images(driver,file_path):
     try:
         with open(json_path, mode='w', encoding='utf-8-sig') as file:
             json.dump({'restaurant_id': restaurant_id, 'images': tag_images}, file, ensure_ascii=False, indent=2)
-    except:
-        pass
+    except Exception as e:
+        print(f"Failed to write JSON for {restaurant_id}: {e}")
 
 #====================== GET RESTAURANT LINK ======================
 def get_name_address_list(df):
@@ -252,64 +255,72 @@ def get_restaurant_link(driver,restaurant_string:str):
 
 #====================== REVIEW CRAWLING ======================
 def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data'):
-    images_path = f'{str(folder_name)}/images/{str(restaurant_id)}.csv'
-    reviews_path = f'{str(folder_name)}/reviews/{str(restaurant_id)}.csv'
-    #====================== driver SETTINGS =====================
-    driver = webdriver.Chrome(options=chrome_options)
-    actions = ActionChains(driver)
-    driver.get(link)
-    
-    ## Click on the "All" button to show all photos
-    actions = ActionChains(driver)
-    all_button = driver.find_element(By.XPATH, '//button[contains(@class, "K4UgGe") and @aria-label="Tất cả"]')
-    
-    actions.move_to_element(all_button).perform() # Move to the button and click it!!!
-    time.sleep(random.uniform(1, 2))
-    all_button.click()
-    time.sleep(random.uniform(1, 2))
-    get_images(driver,images_path)
+    try:
+        images_path = f'{str(folder_name)}/images/{str(restaurant_id)}.csv'
+        reviews_path = f'{str(folder_name)}/reviews/{str(restaurant_id)}.csv'
+        #====================== driver SETTINGS =====================
+        driver = webdriver.Chrome(options=chrome_options)
+        actions = ActionChains(driver)
+        driver.get(link)
+        
+        # Click on the "All" button to show all photos
+        all_button = driver.find_element(By.XPATH, '//button[contains(@class, "K4UgGe") and @aria-label="Tất cả"]')
+        actions.move_to_element(all_button).perform()
+        time.sleep(random.uniform(1, 2))
+        all_button.click()
+        time.sleep(random.uniform(1, 2))
+        get_images(driver, images_path)
 
-    #====================== RELOAD & ADD  ========================
-    chrome_options_extra = Options()
-    chrome_options_extra = chrome_options
-    prefs = {
-        "profile.managed_default_content_settings.images": 2,
-        "profile.default_content_setting_values.notifications": 2,
-        "profile.managed_default_content_settings.stylesheets": 2,
-        "profile.managed_default_content_settings.cookies": 2,
-        "profile.managed_default_content_settings.javascript": 1,  # Keep JS enabled if needed
-        "profile.managed_default_content_settings.plugins": 2,
-        "profile.managed_default_content_settings.popups": 2,
-        "profile.managed_default_content_settings.geolocation": 2,
-        "profile.managed_default_content_settings.media_stream": 2,
-    }
+        #====================== RELOAD & ADD  ========================
+        chrome_options_extra = Options()
+        chrome_options_extra = chrome_options
+        prefs = {
+            "profile.managed_default_content_settings.images": 2,
+            "profile.default_content_setting_values.notifications": 2,
+            "profile.managed_default_content_settings.stylesheets": 2,
+            "profile.managed_default_content_settings.cookies": 2,
+            "profile.managed_default_content_settings.javascript": 1,
+            "profile.managed_default_content_settings.plugins": 2,
+            "profile.managed_default_content_settings.popups": 2,
+            "profile.managed_default_content_settings.geolocation": 2,
+            "profile.managed_default_content_settings.media_stream": 2,
+        }
+        chrome_options_extra.add_experimental_option("prefs", prefs)
+        driver.close()
+        driver = webdriver.Chrome(options=chrome_options_extra)
+        driver.get(link)
+        actions = ActionChains(driver)
+        driver.execute_script("document.body.style.zoom='25%'")
+        time.sleep(random.uniform(5, 7))
+        #=============================================================
+        element = WebDriverWait(driver, 25).until(
+            EC.element_to_be_clickable((By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]'))
+        )
+        element.click()
+        tag_click(driver, 'Bài đánh giá')
 
-    chrome_options_extra.add_experimental_option("prefs", prefs)
-    driver.close()
-    driver = webdriver.Chrome(options=chrome_options_extra)
-    driver.get(link)
-    actions = ActionChains(driver)
-    driver.execute_script("document.body.style.zoom='25%'")
-    time.sleep(random.uniform(5, 7))
-    #=============================================================
-    element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div/div/button[2]'))
-    )
-    element.click()
-    tag_click(driver,'Bài đánh giá')
-
-    time.sleep(random.uniform(1, 2))
-    driver.find_element(By.CSS_SELECTOR, ".HQzyZ").click()
-    # driver.find_element(By.CSS_SELECTOR, ".DVeyrd").click()
-    time.sleep(random.uniform(1, 2))
-    actions.send_keys(Keys.DOWN).perform()
-    time.sleep(random.uniform(0.5, 1))
-    actions.send_keys(Keys.ENTER).perform()
-    time.sleep(random.uniform(1, 2))
-    #=============================================================
-    number_of_reviews = int(driver.find_element(By.XPATH, '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[2]/div/div[2]/div[3]').text.split()[0].replace('.', ''))
-    
-    time.sleep(2)
-    time.sleep(random.uniform(3, 5))
-    
-    get_reviews(driver,number_of_reviews,reviews_path)
+        time.sleep(random.uniform(1, 2))
+        driver.find_element(By.CSS_SELECTOR, ".HQzyZ").click()
+        time.sleep(random.uniform(1, 2))
+        actions.send_keys(Keys.DOWN).perform()
+        time.sleep(random.uniform(0.5, 1))
+        actions.send_keys(Keys.ENTER).perform()
+        time.sleep(random.uniform(1, 2))
+        #=============================================================
+        try:
+            number_of_reviews = int(driver.find_element(
+                By.XPATH, 
+                '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[2]/div/div[2]/div[3]'
+            ).text.split()[0].replace('.', ''))
+        except:
+            number_of_reviews = 0
+        time.sleep(2)
+        time.sleep(random.uniform(3, 5))
+        
+        get_reviews(driver, number_of_reviews, reviews_path)
+        driver.close()
+    except Exception as e:
+        try:
+            driver.close()
+        except:
+            pass
