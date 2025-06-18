@@ -118,7 +118,7 @@ def change_language_to_vietnamese(url):
     return new_url
 
 #====================== REVIEW CRAWLING ======================
-def get_reviews(driver, number_of_reviews, file_path, constant=0.25, thresh_hold=4000):
+def get_reviews(driver, number_of_reviews, file_path, constant=0.25, thresh_hold=2000):
     #====================== LIMIT THE REVIEW ===============================
     if number_of_reviews > thresh_hold:
         number_of_reviews = thresh_hold
@@ -132,7 +132,7 @@ def get_reviews(driver, number_of_reviews, file_path, constant=0.25, thresh_hold
     start_time = time.time()
     ele_key_down = driver.find_element(By.CSS_SELECTOR, ".m6QErb.DxyBCb.kA9KIf.dS8AEf")
     while True:
-        for _ in range(10):  # Send PAGE_DOWN 10 times per loop
+        for _ in range(5):  # Send PAGE_DOWN 10 times per loop
             ele_key_down.send_keys(Keys.PAGE_DOWN)
         time.sleep(0.1)
         elapsed_time = time.time() - start_time
@@ -264,13 +264,15 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data'):
         driver.get(link)
         
         # Click on the "All" button to show all photos
-        all_button = driver.find_element(By.XPATH, '//button[contains(@class, "K4UgGe") and @aria-label="Tất cả"]')
+        all_button = WebDriverWait(driver, 20).until(
+            EC.element_to_be_clickable((By.XPATH, '//button[contains(@class, "K4UgGe") and @aria-label="Tất cả"]'))
+        )        
+        time.sleep(random.uniform(1, 2))
         actions.move_to_element(all_button).perform()
-        time.sleep(random.uniform(1, 2))
         all_button.click()
-        time.sleep(random.uniform(1, 2))
+        time.sleep(random.uniform(5, 10))
         get_images(driver, images_path)
-
+        time.sleep(random.uniform(8, 10))
         #====================== RELOAD & ADD  ========================
         chrome_options_extra = Options()
         chrome_options_extra = chrome_options
@@ -317,7 +319,7 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data'):
         time.sleep(2)
         time.sleep(random.uniform(3, 5))
         
-        get_reviews(driver, number_of_reviews, reviews_path)
+        # get_reviews(driver, number_of_reviews, reviews_path)
         driver.close()
     except Exception as e:
         try:
