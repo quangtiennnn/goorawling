@@ -264,15 +264,13 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data'):
         driver.get(link)
         
         # Click on the "All" button to show all photos
-        all_button = WebDriverWait(driver, 20).until(
-            EC.element_to_be_clickable((By.XPATH, '//button[contains(@class, "K4UgGe") and @aria-label="Tất cả"]'))
-        )        
-        time.sleep(random.uniform(1, 2))
+        time.sleep(random.uniform(3, 5))
+        all_button = driver.find_element(By.XPATH, '//button[contains(@class, "K4UgGe") and @aria-label="Tất cả"]')
         actions.move_to_element(all_button).perform()
         all_button.click()
-        time.sleep(random.uniform(5, 10))
+        time.sleep(random.uniform(1, 3))
         get_images(driver, images_path)
-        time.sleep(random.uniform(8, 10))
+        time.sleep(random.uniform(1, 3))
         #====================== RELOAD & ADD  ========================
         chrome_options_extra = Options()
         chrome_options_extra = chrome_options
