@@ -261,9 +261,10 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', im
         #====================== driver SETTINGS =====================
         driver = webdriver.Chrome(options=chrome_options)
         actions = ActionChains(driver)
-        driver.get(link)
+        # driver.get(link)
         
         if images:
+            driver.get(change_language_to_english(link))
             time.sleep(random.uniform(3, 5))
             all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
             all_photos.click()
@@ -287,7 +288,7 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', im
                 "profile.managed_default_content_settings.media_stream": 2,
             }
             chrome_options_extra.add_experimental_option("prefs", prefs)
-            driver.close()
+            # driver.close()
             driver = webdriver.Chrome(options=chrome_options_extra)
             driver.get(link)
             actions = ActionChains(driver)
