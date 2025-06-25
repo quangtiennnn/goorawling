@@ -23,6 +23,8 @@ import numpy as np
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 import random
 import json
+import io
+from PIL import Image
 #====================== CHROME DRIVER SETUP ======================
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
@@ -226,6 +228,39 @@ def get_images(driver, file_path):
     except Exception as e:
         print(f"Failed to write JSON for {restaurant_id}: {e}")
 
+
+def get_menu(driver, file_path):
+    restaurant_id = file_path.split("/")[-1].replace(".csv", "")
+    # Prepare directory: menu/restaurant_id/
+    menu_dir = os.path.join("menu", restaurant_id)
+    if not os.path.exists(menu_dir):
+        os.makedirs(menu_dir)
+    try:
+        tag_click(driver, "Thực đơn")
+        time.sleep(random.uniform(1, 2))  # Wait for the menu to load
+
+        # Find all elements with class 'K4UgGe'
+        buttons = driver.find_elements(By.CSS_SELECTOR, '.K4UgGe')
+        # Filter those whose aria-label starts with "Ảnh "
+        image_buttons = [
+            btn for btn in buttons
+            if btn.get_attribute('aria-label') and btn.get_attribute('aria-label').startswith('Ảnh ')
+        ]
+
+        for idx, btn in enumerate(image_buttons):
+            btn.click()
+            time.sleep(2)  # Wait for the image to load
+            png_bytes = driver.get_screenshot_as_png()
+            image = Image.open(io.BytesIO(png_bytes))
+
+            # Crop the right half
+            width, height = image.size
+            right_half = image.crop((width // 2, 0, width, height))
+            right_half.save(os.path.join(menu_dir, f"menu_{idx+1}.png"))
+    except Exception as e:
+        pass
+
+
 #====================== GET RESTAURANT LINK ======================
 def get_name_address_list(df):
     """
@@ -254,23 +289,28 @@ def get_restaurant_link(driver,restaurant_string:str):
     return change_language_to_vietnamese(restaurant_link)
 
 #====================== REVIEW CRAWLING ======================
-def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', images: bool = False, reviews: bool = False):
+# def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', images: bool = False, reviews: bool = False):
+def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', menu: bool = False, reviews: bool = False):
     try:
         images_path = f'{str(folder_name)}/images/{str(restaurant_id)}.csv'
+        menu_path = f'{str(folder_name)}/menu/{str(restaurant_id)}.csv'
         reviews_path = f'{str(folder_name)}/reviews/{str(restaurant_id)}.csv'
         #====================== driver SETTINGS =====================
         driver = webdriver.Chrome(options=chrome_options)
         actions = ActionChains(driver)
         # driver.get(link)
         
-        if images:
-            driver.get(change_language_to_english(link))
-            time.sleep(random.uniform(3, 5))
-            all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
-            all_photos.click()
-            time.sleep(random.uniform(1, 3))
-            get_images(driver, images_path)
-            time.sleep(random.uniform(1, 3))
+        if menu:
+            driver.get(link)
+            time.sleep(random.uniform(10, 15))
+            get_menu(driver, menu_path)
+            # # time.sleep(random.uniform(10, 15))
+            # all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
+            # time.sleep(random.uniform(1, 2))
+            # all_photos.click()
+            # time.sleep(random.uniform(1, 3))
+            # get_images(driver, images_path)
+            # time.sleep(random.uniform(1, 3))
         
         if reviews:
             #====================== RELOAD & ADD  ========================
@@ -320,7 +360,7 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', im
             time.sleep(random.uniform(3, 5))
             
             # Uncomment this line to actually get reviews
-            # get_reviews(driver, number_of_reviews, reviews_path)
+            get_reviews(driver, number_of_reviews, reviews_path)
             driver.close()
         else:
             driver.close()

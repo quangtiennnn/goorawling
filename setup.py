@@ -17,7 +17,7 @@ if uploaded_file is not None:
     thread_number = st.number_input("Multi-thread number", min_value=1, value=2)
     st.write(f"Selected multi-thread number: {thread_number}")
 
-    crawl_images = st.checkbox("Crawl Images", value=True)
+    crawl_images = st.checkbox("Crawl Menu", value=True)
     crawl_reviews = st.checkbox("Crawl Reviews", value=False)
 
     if st.button("Start Crawling"):
@@ -30,7 +30,7 @@ if uploaded_file is not None:
             google_crawl(
                 str(row['restaurant_id']),
                 row['restaurant_link'],
-                images=crawl_images,
+                menu=crawl_images,
                 reviews=crawl_reviews
             )
             return row['restaurant_id']
