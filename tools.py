@@ -232,7 +232,16 @@ def get_images(driver, file_path):
 def get_menu(driver, file_path):
     restaurant_id = file_path.split("/")[-1].replace(".csv", "")
     # Prepare directory: menu/restaurant_id/
-    menu_dir = os.path.join("menu", restaurant_id)
+
+    # Prepare directory: go into the parent directory and create menu/restaurant_id
+    if len(file_path.split('/')) > 1:
+        parent_dir = '/'.join(file_path.split('/')[:-1])
+    else:
+        parent_dir = '.'
+
+    menu_dir = os.path.join(parent_dir, "menu", restaurant_id)
+    if not os.path.exists(menu_dir):
+        os.makedirs(menu_dir)
     if not os.path.exists(menu_dir):
         os.makedirs(menu_dir)
     try:
@@ -249,7 +258,7 @@ def get_menu(driver, file_path):
 
         for idx, btn in enumerate(image_buttons):
             btn.click()
-            time.sleep(2)  # Wait for the image to load
+            time.sleep(4)  # Wait for the image to load
             png_bytes = driver.get_screenshot_as_png()
             image = Image.open(io.BytesIO(png_bytes))
 
