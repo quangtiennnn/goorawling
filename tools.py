@@ -24,6 +24,7 @@ from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 import random
 import json
 import io
+import requests 
 from PIL import Image
 #====================== CHROME DRIVER SETUP ======================
 headers = {
@@ -298,28 +299,47 @@ def get_restaurant_link(driver,restaurant_string:str):
     return change_language_to_vietnamese(restaurant_link)
 
 #====================== REVIEW CRAWLING ======================
-# def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', images: bool = False, reviews: bool = False):
-def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', menu: bool = False, reviews: bool = False):
+def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', images: bool = False, reviews: bool = False):
+# def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', menu: bool = False, reviews: bool = False):
     try:
         images_path = f'{str(folder_name)}/images/{str(restaurant_id)}.csv'
         menu_path = f'{str(folder_name)}/menu/{str(restaurant_id)}.csv'
         reviews_path = f'{str(folder_name)}/reviews/{str(restaurant_id)}.csv'
+        
         #====================== driver SETTINGS =====================
         driver = webdriver.Chrome(options=chrome_options)
         actions = ActionChains(driver)
-        # driver.get(link)
-        
-        if menu:
+        if images:
+            # If no driver or proxy provided, get a new one
+            if driver is None or proxy is None:
+                proxy = get_first_working_proxy_from_url()
+                driver = webdriver.Chrome(options=get_chrome_options(proxy))
+
             driver.get(link)
             time.sleep(random.uniform(10, 15))
-            get_menu(driver, menu_path)
-            # # time.sleep(random.uniform(10, 15))
-            # all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
-            # time.sleep(random.uniform(1, 2))
-            # all_photos.click()
-            # time.sleep(random.uniform(1, 3))
-            # get_images(driver, images_path)
-            # time.sleep(random.uniform(1, 3))
+            current_url = driver.current_url
+            all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
+            all_photos.click()
+            afterClick_url = driver.current_url
+
+            if afterClick_url == current_url:
+                print("Web locked, cannot access photos. Rotating proxy...")
+                # Close the old driver and get a new proxy/driver
+                driver.quit()
+                proxy = get_first_working_proxy_from_url()
+                driver = webdriver.Chrome(options=get_chrome_options(proxy))
+                driver.get(link)
+                time.sleep(random.uniform(10, 15))
+                all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
+                all_photos.click()
+                afterClick_url = driver.current_url
+                if afterClick_url == current_url:
+                    print("Still locked after rotating proxy.")
+                else:
+                    get_images(driver, images_path)
+            else:
+                get_images(driver, images_path)
+            time.sleep(random.uniform(1, 3))
         
         if reviews:
             #====================== RELOAD & ADD  ========================
@@ -373,8 +393,55 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', me
             driver.close()
         else:
             driver.close()
+
+        # If images or reviews are not requested, just close the driver
+        return driver, proxy
+    
     except Exception as e:
         try:
-            driver.close()
+            if driver:
+                driver.quit()
         except:
             pass
+        return None, None
+
+### ROTATING PROXIES
+# This function fetches a list of proxies from a URL and returns the first working proxy.
+# It uses the requests library to test each proxy by making a request to httpbin.org.
+# If a proxy is working, it returns the proxy address; otherwise, it returns None.
+
+url = "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
+response = requests.get(url)
+
+def get_first_working_proxy_from_url():
+    url = "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        proxies_list = response.text.strip().splitlines()
+        random.shuffle(proxies_list)  # Shuffle the proxy list
+        for proxy in proxies_list:
+            proxy_dict = {
+                "http": f"http://{proxy}",
+                "https": f"http://{proxy}"
+            }
+            try:
+                test = requests.get("http://httpbin.org/ip", proxies=proxy_dict, timeout=5)
+                if test.status_code == 200:
+                    return proxy
+            except Exception:
+                continue
+    return None
+
+def get_chrome_options(proxy=None):
+    options = Options()
+    options.add_argument('--no-sandbox')
+    options.add_argument("--incognito")
+    options.add_argument("--disable-application-cache")
+    options.add_argument("--disable-cache")
+    options.add_argument("--disk-cache-size=0")
+    options.add_argument("--disable-extensions")
+    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    if proxy:
+        options.add_argument(f'--proxy-server=http://{proxy}')
+    return options

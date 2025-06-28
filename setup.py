@@ -3,6 +3,25 @@ import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from tools import google_crawl
 
+class CrawlerWorker:
+    def __init__(self, images, reviews):
+        self.driver = None
+        self.proxy = None
+        self.images = images
+        self.reviews = reviews
+
+    def crawl_row(self, row):
+        self.driver, self.proxy = google_crawl(
+            str(row['restaurant_id']),
+            row['restaurant_link'],
+            images=self.images,
+            reviews=self.reviews,
+            driver=self.driver,
+            proxy=self.proxy
+        )
+        return row['restaurant_id']
+
+# Streamlit app for CSV import and row selection
 st.title("CSV Import and Row Selection")
 
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
@@ -26,17 +45,17 @@ if uploaded_file is not None:
         progress = st.progress(0)
         total = len(df_selected)
 
-        def crawl_row(row):
-            google_crawl(
-                str(row['restaurant_id']),
-                row['restaurant_link'],
-                menu=crawl_images,
-                reviews=crawl_reviews
-            )
-            return row['restaurant_id']
+        # Create a worker for each thread
+        workers = [CrawlerWorker(crawl_images, crawl_reviews) for _ in range(thread_number)]
+
+        def thread_crawl_row(row, worker_idx):
+            return workers[worker_idx].crawl_row(row)
 
         with ThreadPoolExecutor(max_workers=thread_number) as executor:
-            futures = {executor.submit(crawl_row, row): idx for idx, (_, row) in enumerate(df_selected.iterrows())}
+            futures = {
+                executor.submit(thread_crawl_row, row, idx % thread_number): idx
+                for idx, (_, row) in enumerate(df_selected.iterrows())
+            }
             for i, future in enumerate(as_completed(futures)):
                 idx = futures[future]
                 try:
