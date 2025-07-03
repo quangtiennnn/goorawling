@@ -1,27 +1,13 @@
 import streamlit as st
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from tools import google_crawl
+from tools import *
 
-class CrawlerWorker:
-    def __init__(self, images, reviews):
-        self.driver = None
-        self.proxy = None
-        self.images = images
-        self.reviews = reviews
+# GLOBAL VARIABLES
+current_proxy = None
 
-    def crawl_row(self, row):
-        self.driver, self.proxy = google_crawl(
-            str(row['restaurant_id']),
-            row['restaurant_link'],
-            images=self.images,
-            reviews=self.reviews,
-            driver=self.driver,
-            proxy=self.proxy
-        )
-        return row['restaurant_id']
 
-# Streamlit app for CSV import and row selection
+
 st.title("CSV Import and Row Selection")
 
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
@@ -33,10 +19,11 @@ if uploaded_file is not None:
     df_selected = df.iloc[start_row:end_row].reset_index(drop=True)
     st.dataframe(df_selected)
 
+
     thread_number = st.number_input("Multi-thread number", min_value=1, value=2)
     st.write(f"Selected multi-thread number: {thread_number}")
 
-    crawl_images = st.checkbox("Crawl Menu", value=True)
+    crawl_images = st.checkbox("Crawl Images", value=True)
     crawl_reviews = st.checkbox("Crawl Reviews", value=False)
 
     if st.button("Start Crawling"):
@@ -45,17 +32,32 @@ if uploaded_file is not None:
         progress = st.progress(0)
         total = len(df_selected)
 
-        # Create a worker for each thread
-        workers = [CrawlerWorker(crawl_images, crawl_reviews) for _ in range(thread_number)]
-
-        def thread_crawl_row(row, worker_idx):
-            return workers[worker_idx].crawl_row(row)
+        def crawl_row(row):
+            global current_proxy
+            proxy = current_proxy
+            result = google_crawl(
+                str(row['restaurant_id']),
+                row['restaurant_link'],
+                proxy=proxy,
+                images=crawl_images,
+                reviews=crawl_reviews
+            )
+            # If google_crawl returns 0 (afterClick_url == current_url), try with a new proxy
+            if result == 0:
+                print('Result = 0! Running to find a new proxy...')
+                proxy = get_first_working_proxy_from_url()
+                current_proxy = proxy  # Update the global proxy
+                result = google_crawl(
+                    str(row['restaurant_id']),
+                    row['restaurant_link'],
+                    proxy=proxy,
+                    images=crawl_images,
+                    reviews=crawl_reviews
+                )
+            return row['restaurant_id']
 
         with ThreadPoolExecutor(max_workers=thread_number) as executor:
-            futures = {
-                executor.submit(thread_crawl_row, row, idx % thread_number): idx
-                for idx, (_, row) in enumerate(df_selected.iterrows())
-            }
+            futures = {executor.submit(crawl_row, row): idx for idx, (_, row) in enumerate(df_selected.iterrows())}
             for i, future in enumerate(as_completed(futures)):
                 idx = futures[future]
                 try:

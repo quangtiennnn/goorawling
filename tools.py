@@ -299,68 +299,34 @@ def get_restaurant_link(driver,restaurant_string:str):
     return change_language_to_vietnamese(restaurant_link)
 
 #====================== REVIEW CRAWLING ======================
-def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', images: bool = False, reviews: bool = False):
-# def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', menu: bool = False, reviews: bool = False):
+def google_crawl(restaurant_id: str, link, proxy: str, folder_name: str = 'crawled_data', images: bool = False, reviews: bool = False):
     try:
         images_path = f'{str(folder_name)}/images/{str(restaurant_id)}.csv'
-        menu_path = f'{str(folder_name)}/menu/{str(restaurant_id)}.csv'
+        # menu_path = f'{str(folder_name)}/menu/{str(restaurant_id)}.csv'
         reviews_path = f'{str(folder_name)}/reviews/{str(restaurant_id)}.csv'
         
-        #====================== driver SETTINGS =====================
-        driver = webdriver.Chrome(options=chrome_options)
-        actions = ActionChains(driver)
+        #====================== DRIVER SETTINGS =====================
         if images:
-            # If no driver or proxy provided, get a new one
-            if driver is None or proxy is None:
-                proxy = get_first_working_proxy_from_url()
-                driver = webdriver.Chrome(options=get_chrome_options(proxy))
-
+            driver = webdriver.Chrome(options=get_chrome_options(proxy))
+            actions = ActionChains(driver)
             driver.get(link)
-            time.sleep(random.uniform(10, 15))
-            current_url = driver.current_url
+            time.sleep(random.uniform(3, 5))
             all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
             all_photos.click()
-            afterClick_url = driver.current_url
+            time.sleep(random.uniform(2, 3))
 
-            if afterClick_url == current_url:
-                print("Web locked, cannot access photos. Rotating proxy...")
-                # Close the old driver and get a new proxy/driver
-                driver.quit()
-                proxy = get_first_working_proxy_from_url()
-                driver = webdriver.Chrome(options=get_chrome_options(proxy))
-                driver.get(link)
-                time.sleep(random.uniform(10, 15))
-                all_photos = driver.find_element(By.CSS_SELECTOR, '.aoRNLd.kn2E5e.NMjTrf')
+            try:
                 all_photos.click()
-                afterClick_url = driver.current_url
-                if afterClick_url == current_url:
-                    print("Still locked after rotating proxy.")
-                else:
-                    get_images(driver, images_path)
-            else:
+                return 0
+            except Exception:
                 get_images(driver, images_path)
             time.sleep(random.uniform(1, 3))
         
         if reviews:
             #====================== RELOAD & ADD  ========================
-            chrome_options_extra = Options()
-            chrome_options_extra = chrome_options
-            prefs = {
-                "profile.managed_default_content_settings.images": 2,
-                "profile.default_content_setting_values.notifications": 2,
-                "profile.managed_default_content_settings.stylesheets": 2,
-                "profile.managed_default_content_settings.cookies": 2,
-                "profile.managed_default_content_settings.javascript": 1,
-                "profile.managed_default_content_settings.plugins": 2,
-                "profile.managed_default_content_settings.popups": 2,
-                "profile.managed_default_content_settings.geolocation": 2,
-                "profile.managed_default_content_settings.media_stream": 2,
-            }
-            chrome_options_extra.add_experimental_option("prefs", prefs)
-            # driver.close()
-            driver = webdriver.Chrome(options=chrome_options_extra)
-            driver.get(link)
+            driver = webdriver.Chrome(options=get_chrome_options(reviews=True))
             actions = ActionChains(driver)
+            driver.get(link)
             driver.execute_script("document.body.style.zoom='25%'")
             time.sleep(random.uniform(5, 7))
             #=============================================================
@@ -369,7 +335,6 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', im
             )
             element.click()
             tag_click(driver, 'Bài đánh giá')
-
             time.sleep(random.uniform(1, 2))
             driver.find_element(By.CSS_SELECTOR, ".HQzyZ").click()
             time.sleep(random.uniform(1, 2))
@@ -394,25 +359,17 @@ def google_crawl(restaurant_id: str, link, folder_name: str = 'crawled_data', im
         else:
             driver.close()
 
-        # If images or reviews are not requested, just close the driver
-        return driver, proxy
-    
     except Exception as e:
         try:
             if driver:
                 driver.quit()
         except:
             pass
-        return None, None
 
 ### ROTATING PROXIES
 # This function fetches a list of proxies from a URL and returns the first working proxy.
 # It uses the requests library to test each proxy by making a request to httpbin.org.
 # If a proxy is working, it returns the proxy address; otherwise, it returns None.
-
-url = "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
-response = requests.get(url)
-
 def get_first_working_proxy_from_url():
     url = "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
     response = requests.get(url)
@@ -433,7 +390,7 @@ def get_first_working_proxy_from_url():
                 continue
     return None
 
-def get_chrome_options(proxy=None):
+def get_chrome_options(proxy=None, reviews=False):
     options = Options()
     options.add_argument('--no-sandbox')
     options.add_argument("--incognito")
@@ -444,4 +401,17 @@ def get_chrome_options(proxy=None):
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     if proxy:
         options.add_argument(f'--proxy-server=http://{proxy}')
+    if reviews:
+        prefs = {
+            "profile.managed_default_content_settings.images": 2,
+            "profile.default_content_setting_values.notifications": 2,
+            "profile.managed_default_content_settings.stylesheets": 2,
+            "profile.managed_default_content_settings.cookies": 2,
+            "profile.managed_default_content_settings.javascript": 1,
+            "profile.managed_default_content_settings.plugins": 2,
+            "profile.managed_default_content_settings.popups": 2,
+            "profile.managed_default_content_settings.geolocation": 2,
+            "profile.managed_default_content_settings.media_stream": 2,
+        }
+        options.add_experimental_option("prefs", prefs)
     return options
